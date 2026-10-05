@@ -1,0 +1,93 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "Sailing Course",
+  "@appTitle": {
+    "description": "Application name shown in the OS and home app bar."
+  },
+  "comingSoon": "Coming soon",
+  "cancel": "Cancel",
+
+  "moduleMpdmTitle": "MPDM – Lights & shapes",
+  "moduleMpdmSubtitle": "International Regulations for Preventing Collisions at Sea (Rules 20–31)",
+  "moduleKnotsTitle": "Sailing knots",
+  "moduleNavigationTitle": "Navigation",
+
+  "chooseLearnScope": "Choose a study scope",
+  "scopeAll": "Everything ({count})",
+  "@scopeAll": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "scopeLights": "Lights ({count})",
+  "@scopeLights": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "scopeShapes": "Day shapes ({count})",
+  "@scopeShapes": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "learn": "Learn",
+  "learnLights": "Learn – lights",
+  "learnShapes": "Learn – shapes",
+  "statistics": "Statistics",
+  "learnSubtitle": "Study with hints and explanations",
+  "reviews": "Reviews (SRS)",
+  "reviewsShort": "Reviews",
+  "dueToday": "Due today: {count}",
+  "@dueToday": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "noReviews": "No cards to review – come back later",
+  "exam": "Exam",
+  "examSubtitle": "All cards, no hints. Best: {score}%",
+  "@examSubtitle": {
+    "placeholders": { "score": { "type": "int" } }
+  },
+
+  "cardCounter": "Card {current} / {total}",
+  "@cardCounter": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "next": "Next",
+  "finish": "Finish",
+
+  "result": "Result",
+  "examPassed": "Passed! (threshold 75%)",
+  "examFailed": "Failed (threshold 75%)",
+  "correctFirstTry": "correct answers on the first try",
+  "backToMenu": "Back to menu",
+
+  "statSeen": "Seen cards",
+  "statMastered": "Mastered (interval ≥ 7 days)",
+  "statAccuracy": "Overall accuracy",
+  "accuracyValue": "{percent}%  ({correct}/{total})",
+  "@accuracyValue": {
+    "placeholders": {
+      "percent": { "type": "int" },
+      "correct": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "statBestExam": "Best exam score",
+  "fraction": "{part} / {whole}",
+  "@fraction": {
+    "placeholders": {
+      "part": { "type": "int" },
+      "whole": { "type": "int" }
+    }
+  },
+  "percentValue": "{value}%",
+  "@percentValue": {
+    "placeholders": { "value": { "type": "int" } }
+  },
+  "resetConfirmTitle": "Reset progress?",
+  "resetConfirmBody": "This will delete all learning, review and exam-record data.",
+  "reset": "Reset",
+  "resetProgress": "Reset progress",
+
+  "language": "Language",
+  "systemDefault": "System default"
+}

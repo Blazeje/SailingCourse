@@ -1,0 +1,1042 @@
+{
+  "version": 1,
+  "cards": [
+    {
+      "id": "n01",
+      "category": "lights",
+      "isDay": false,
+      "question": "You see these lights ahead. What vessel is it?",
+      "options": [
+        "Power-driven vessel underway (less than 50 m)",
+        "Vessel at anchor",
+        "Sailing vessel underway"
+      ],
+      "correctIndex": 0,
+      "explanation": "One masthead light (white) + sidelights = power-driven vessel underway, shorter than 50 m. (COLREGS Rule 23)",
+      "elements": [
+        {
+          "x": 0.3,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.7,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "GREEN"
+        },
+        {
+          "x": 0.5,
+          "y": 0.3,
+          "kind": "LIGHT",
+          "color": "WHITE"
+        }
+      ]
+    },
+    {
+      "id": "n02",
+      "category": "lights",
+      "isDay": false,
+      "question": "What vessel is it (bow view)?",
+      "options": [
+        "Power-driven vessel underway, 50 m or more in length",
+        "Power-driven vessel under 50 m",
+        "Vessel towing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Two masthead lights (forward lower, aft higher) + sidelights = power-driven vessel underway, 50 m or longer. (COLREGS Rule 23)",
+      "elements": [
+        {
+          "x": 0.3,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.7,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "GREEN"
+        },
+        {
+          "x": 0.5,
+          "y": 0.46,
+          "kind": "LIGHT",
+          "color": "WHITE"
+        },
+        {
+          "x": 0.5,
+          "y": 0.28,
+          "kind": "LIGHT",
+          "color": "WHITE"
+        }
+      ]
+    },
+    {
+      "id": "n03",
+      "category": "lights",
+      "isDay": false,
+      "question": "Which lights do you see? What vessel is it?",
+      "options": [
+        "Sailing vessel underway",
+        "Power-driven vessel underway",
+        "Vessel at anchor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Only sidelights (no masthead light, with a sternlight) = sailing vessel underway. (COLREGS Rule 25)",
+      "elements": [
+        {
+          "x": 0.3,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.7,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "GREEN"
+        }
+      ]
+    },
+    {
+      "id": "n04",
+      "category": "lights",
+      "isDay": false,
+      "question": "A sailing vessel may additionally show these lights at the masthead. What is it?",
+      "options": [
+        "Sailing vessel underway (optional lights: red over green)",
+        "Vessel engaged in fishing (not trawling)",
+        "Power-driven vessel"
+      ],
+      "correctIndex": 0,
+      "explanation": "A sailing vessel underway may additionally show at the masthead two all-round lights: red over green. (COLREGS Rule 25(c))",
+      "elements": [
+        {
+          "x": 0.3,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.7,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "GREEN"
+        },
+        {
+          "x": 0.5,
+          "y": 0.2,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.5,
+          "y": 0.3,
+          "kind": "LIGHT",
+          "color": "GREEN"
+        }
+      ]
+    },
+    {
+      "id": "n05",
+      "category": "lights",
+      "isDay": false,
+      "question": "A vessel shows this light. What does it mean?",
+      "options": [
+        "Vessel at anchor (under 50 m)",
+        "Power-driven vessel underway",
+        "Vessel not under command"
+      ],
+      "correctIndex": 0,
+      "explanation": "One white all-round light, at the bow = vessel at anchor, shorter than 50 m. (COLREGS Rule 30)",
+      "elements": [
+        {
+          "x": 0.5,
+          "y": 0.26,
+          "kind": "LIGHT",
+          "color": "WHITE"
+        }
+      ]
+    },
+    {
+      "id": "n06",
+      "category": "lights",
+      "isDay": false,
+      "question": "A white all-round light AND sidelights. What vessel is it?",
+      "options": [
+        "Power-driven vessel under 12 m",
+        "Vessel at anchor",
+        "Vessel not under command"
+      ],
+      "correctIndex": 0,
+      "explanation": "A power-driven vessel shorter than 12 m may, instead of the masthead and stern lights, show one all-round white light and sidelights. (COLREGS Rule 23(d))",
+      "elements": [
+        {
+          "x": 0.3,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.7,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "GREEN"
+        },
+        {
+          "x": 0.5,
+          "y": 0.26,
+          "kind": "LIGHT",
+          "color": "WHITE"
+        }
+      ]
+    },
+    {
+      "id": "n07",
+      "category": "lights",
+      "isDay": false,
+      "question": "What vessel is it?",
+      "options": [
+        "Vessel at anchor, 50 m or more in length",
+        "Vessel at anchor under 50 m",
+        "Vessel restricted in her ability to manoeuvre"
+      ],
+      "correctIndex": 0,
+      "explanation": "Two white all-round lights: forward higher, aft lower = vessel at anchor, 50 m or longer. (COLREGS Rule 30)",
+      "elements": [
+        {
+          "x": 0.5,
+          "y": 0.22,
+          "kind": "LIGHT",
+          "color": "WHITE"
+        },
+        {
+          "x": 0.5,
+          "y": 0.5,
+          "kind": "LIGHT",
+          "color": "WHITE"
+        }
+      ]
+    },
+    {
+      "id": "n08",
+      "category": "lights",
+      "isDay": false,
+      "question": "Two red lights, one above the other. What vessel is it?",
+      "options": [
+        "Vessel not under command (NUC)",
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel at anchor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Two red all-round lights in a vertical line = vessel not under command. (COLREGS Rule 27(a))",
+      "elements": [
+        {
+          "x": 0.5,
+          "y": 0.24,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.5,
+          "y": 0.38,
+          "kind": "LIGHT",
+          "color": "RED"
+        }
+      ]
+    },
+    {
+      "id": "n09",
+      "category": "lights",
+      "isDay": false,
+      "question": "Lights: red - white - red (vertical). What vessel is it?",
+      "options": [
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel not under command",
+        "Vessel constrained by her draught"
+      ],
+      "correctIndex": 0,
+      "explanation": "Red-white-red all-round = vessel restricted in her ability to manoeuvre. (COLREGS Rule 27(b))",
+      "elements": [
+        {
+          "x": 0.5,
+          "y": 0.2,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.5,
+          "y": 0.33,
+          "kind": "LIGHT",
+          "color": "WHITE"
+        },
+        {
+          "x": 0.5,
+          "y": 0.46,
+          "kind": "LIGHT",
+          "color": "RED"
+        }
+      ]
+    },
+    {
+      "id": "n10",
+      "category": "lights",
+      "isDay": false,
+      "question": "Three red lights in a vertical line. What vessel is it?",
+      "options": [
+        "Vessel constrained by her draught",
+        "Vessel not under command",
+        "Vessel restricted in her ability to manoeuvre"
+      ],
+      "correctIndex": 0,
+      "explanation": "Three red all-round lights in a vertical line (in addition to the normal power-driven vessel lights) = vessel constrained by her draught. (COLREGS Rule 28)",
+      "elements": [
+        {
+          "x": 0.3,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.7,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "GREEN"
+        },
+        {
+          "x": 0.5,
+          "y": 0.18,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.5,
+          "y": 0.3,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.5,
+          "y": 0.42,
+          "kind": "LIGHT",
+          "color": "RED"
+        }
+      ]
+    },
+    {
+      "id": "n11",
+      "category": "lights",
+      "isDay": false,
+      "question": "Green over white (all-round). What vessel is it?",
+      "options": [
+        "Trawler - vessel engaged in trawling",
+        "Vessel engaged in fishing other than trawling",
+        "Pilot vessel"
+      ],
+      "correctIndex": 0,
+      "explanation": "Green over white (all-round) = vessel engaged in trawling (trawler). (COLREGS Rule 26(b))",
+      "elements": [
+        {
+          "x": 0.3,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.7,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "GREEN"
+        },
+        {
+          "x": 0.5,
+          "y": 0.24,
+          "kind": "LIGHT",
+          "color": "GREEN"
+        },
+        {
+          "x": 0.5,
+          "y": 0.37,
+          "kind": "LIGHT",
+          "color": "WHITE"
+        }
+      ]
+    },
+    {
+      "id": "n12",
+      "category": "lights",
+      "isDay": false,
+      "question": "Red over white (all-round). What vessel is it?",
+      "options": [
+        "Vessel engaged in fishing (other than trawling)",
+        "Trawler",
+        "Vessel not under command"
+      ],
+      "correctIndex": 0,
+      "explanation": "Red over white (all-round) = vessel engaged in fishing other than trawling. (COLREGS Rule 26(c))",
+      "elements": [
+        {
+          "x": 0.3,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.7,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "GREEN"
+        },
+        {
+          "x": 0.5,
+          "y": 0.24,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.5,
+          "y": 0.37,
+          "kind": "LIGHT",
+          "color": "WHITE"
+        }
+      ]
+    },
+    {
+      "id": "n13",
+      "category": "lights",
+      "isDay": false,
+      "question": "White over red (all-round). What vessel is it?",
+      "options": [
+        "Pilot vessel",
+        "Vessel engaged in fishing",
+        "Vessel not under command"
+      ],
+      "correctIndex": 0,
+      "explanation": "White over red (all-round) = pilot vessel (\"white over red - pilot ahead\"). (COLREGS Rule 29)",
+      "elements": [
+        {
+          "x": 0.3,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.7,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "GREEN"
+        },
+        {
+          "x": 0.5,
+          "y": 0.24,
+          "kind": "LIGHT",
+          "color": "WHITE"
+        },
+        {
+          "x": 0.5,
+          "y": 0.37,
+          "kind": "LIGHT",
+          "color": "RED"
+        }
+      ]
+    },
+    {
+      "id": "n14",
+      "category": "lights",
+      "isDay": false,
+      "question": "Two white masthead lights in a vertical line + sidelights. What vessel is it?",
+      "options": [
+        "Vessel towing (length of tow up to 200 m)",
+        "Power-driven vessel 50 m or more",
+        "Vessel restricted in her ability to manoeuvre"
+      ],
+      "correctIndex": 0,
+      "explanation": "Two masthead lights in a vertical line = vessel towing, when the length of the tow does not exceed 200 m. (COLREGS Rule 24)",
+      "elements": [
+        {
+          "x": 0.3,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.7,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "GREEN"
+        },
+        {
+          "x": 0.5,
+          "y": 0.44,
+          "kind": "LIGHT",
+          "color": "WHITE"
+        },
+        {
+          "x": 0.5,
+          "y": 0.32,
+          "kind": "LIGHT",
+          "color": "WHITE"
+        }
+      ]
+    },
+    {
+      "id": "n15",
+      "category": "lights",
+      "isDay": false,
+      "question": "Three white masthead lights in a vertical line + sidelights. What vessel is it?",
+      "options": [
+        "Vessel towing, when the length of the tow exceeds 200 m",
+        "Vessel towing up to 200 m",
+        "Vessel constrained by her draught"
+      ],
+      "correctIndex": 0,
+      "explanation": "Three masthead lights in a vertical line = vessel towing, when the length of the tow exceeds 200 m. (COLREGS Rule 24)",
+      "elements": [
+        {
+          "x": 0.3,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.7,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "GREEN"
+        },
+        {
+          "x": 0.5,
+          "y": 0.46,
+          "kind": "LIGHT",
+          "color": "WHITE"
+        },
+        {
+          "x": 0.5,
+          "y": 0.34,
+          "kind": "LIGHT",
+          "color": "WHITE"
+        },
+        {
+          "x": 0.5,
+          "y": 0.22,
+          "kind": "LIGHT",
+          "color": "WHITE"
+        }
+      ]
+    },
+    {
+      "id": "n16",
+      "category": "lights",
+      "isDay": false,
+      "question": "An anchor light and two red lights. What vessel is it?",
+      "options": [
+        "Vessel aground",
+        "Vessel not under command",
+        "Vessel at anchor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Anchor lights + two red all-round lights in a vertical line = vessel aground. (COLREGS Rule 30(d))",
+      "elements": [
+        {
+          "x": 0.5,
+          "y": 0.16,
+          "kind": "LIGHT",
+          "color": "WHITE"
+        },
+        {
+          "x": 0.5,
+          "y": 0.3,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.5,
+          "y": 0.42,
+          "kind": "LIGHT",
+          "color": "RED"
+        }
+      ]
+    },
+    {
+      "id": "n17",
+      "category": "lights",
+      "isDay": false,
+      "question": "A vessel's normal lights + a yellow flashing all-round light. What is it?",
+      "options": [
+        "Air-cushion vessel (hovercraft) in non-displacement mode",
+        "Pilot vessel",
+        "Vessel not under command"
+      ],
+      "correctIndex": 0,
+      "explanation": "An air-cushion vessel in non-displacement mode shows, in addition to the lights of a power-driven vessel, a yellow all-round flashing light. (COLREGS Rule 23(b))",
+      "elements": [
+        {
+          "x": 0.3,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.7,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "GREEN"
+        },
+        {
+          "x": 0.5,
+          "y": 0.3,
+          "kind": "LIGHT",
+          "color": "WHITE"
+        },
+        {
+          "x": 0.5,
+          "y": 0.18,
+          "kind": "LIGHT",
+          "color": "YELLOW"
+        }
+      ]
+    },
+    {
+      "id": "n18",
+      "category": "lights",
+      "isDay": false,
+      "question": "Three green all-round lights in a triangle + power-driven vessel lights. What vessel is it?",
+      "options": [
+        "Vessel engaged in mineclearance",
+        "Vessel engaged in fishing",
+        "Vessel restricted in her ability to manoeuvre"
+      ],
+      "correctIndex": 0,
+      "explanation": "Three green all-round lights (one at the masthead, one at each yardarm end) = vessel engaged in mineclearance. They indicate that it is dangerous to approach closer than 1000 m. (COLREGS Rule 27(f))",
+      "elements": [
+        {
+          "x": 0.3,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.7,
+          "y": 0.66,
+          "kind": "LIGHT",
+          "color": "GREEN"
+        },
+        {
+          "x": 0.5,
+          "y": 0.44,
+          "kind": "LIGHT",
+          "color": "WHITE"
+        },
+        {
+          "x": 0.5,
+          "y": 0.2,
+          "kind": "LIGHT",
+          "color": "GREEN"
+        },
+        {
+          "x": 0.36,
+          "y": 0.34,
+          "kind": "LIGHT",
+          "color": "GREEN"
+        },
+        {
+          "x": 0.64,
+          "y": 0.34,
+          "kind": "LIGHT",
+          "color": "GREEN"
+        }
+      ]
+    },
+    {
+      "id": "n19",
+      "category": "lights",
+      "isDay": false,
+      "question": "Red-white-red (centre) and on one side two red, on the other two green. What is it?",
+      "options": [
+        "Vessel engaged in dredging with an obstruction (two red = obstruction side, two green = clear side)",
+        "Vessel aground",
+        "Vessel constrained by her draught"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vessel engaged in dredging or underwater operations (restricted in her ability to manoeuvre) when an obstruction exists: RAM lights (red-white-red) + two red on the obstruction side and two green on the side a vessel may pass. (COLREGS Rule 27(d))",
+      "elements": [
+        {
+          "x": 0.5,
+          "y": 0.18,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.5,
+          "y": 0.3,
+          "kind": "LIGHT",
+          "color": "WHITE"
+        },
+        {
+          "x": 0.5,
+          "y": 0.42,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.3,
+          "y": 0.3,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.3,
+          "y": 0.42,
+          "kind": "LIGHT",
+          "color": "RED"
+        },
+        {
+          "x": 0.7,
+          "y": 0.3,
+          "kind": "LIGHT",
+          "color": "GREEN"
+        },
+        {
+          "x": 0.7,
+          "y": 0.42,
+          "kind": "LIGHT",
+          "color": "GREEN"
+        }
+      ]
+    },
+    {
+      "id": "d01",
+      "category": "shapes",
+      "isDay": true,
+      "question": "A vessel shows this shape by day. What does it mean?",
+      "options": [
+        "Vessel at anchor",
+        "Vessel not under command",
+        "Vessel aground"
+      ],
+      "correctIndex": 0,
+      "explanation": "One black ball at the bow = vessel at anchor. (COLREGS Rule 30)",
+      "elements": [
+        {
+          "x": 0.5,
+          "y": 0.3,
+          "kind": "BALL",
+          "color": "BLACK"
+        }
+      ]
+    },
+    {
+      "id": "d02",
+      "category": "shapes",
+      "isDay": true,
+      "question": "Two black balls, one above the other. What vessel is it?",
+      "options": [
+        "Vessel not under command",
+        "Vessel at anchor",
+        "Vessel constrained by her draught"
+      ],
+      "correctIndex": 0,
+      "explanation": "Two black balls in a vertical line = vessel not under command. (COLREGS Rule 27(a))",
+      "elements": [
+        {
+          "x": 0.5,
+          "y": 0.24,
+          "kind": "BALL",
+          "color": "BLACK"
+        },
+        {
+          "x": 0.5,
+          "y": 0.44,
+          "kind": "BALL",
+          "color": "BLACK"
+        }
+      ]
+    },
+    {
+      "id": "d03",
+      "category": "shapes",
+      "isDay": true,
+      "question": "Shapes: ball - diamond - ball (vertical). What vessel is it?",
+      "options": [
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel not under command",
+        "Vessel aground"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ball-diamond-ball = vessel restricted in her ability to manoeuvre. (COLREGS Rule 27(b))",
+      "elements": [
+        {
+          "x": 0.5,
+          "y": 0.2,
+          "kind": "BALL",
+          "color": "BLACK"
+        },
+        {
+          "x": 0.5,
+          "y": 0.34,
+          "kind": "DIAMOND",
+          "color": "BLACK"
+        },
+        {
+          "x": 0.5,
+          "y": 0.48,
+          "kind": "BALL",
+          "color": "BLACK"
+        }
+      ]
+    },
+    {
+      "id": "d04",
+      "category": "shapes",
+      "isDay": true,
+      "question": "A vessel shows a cylinder. What does it mean?",
+      "options": [
+        "Vessel constrained by her draught",
+        "Vessel at anchor",
+        "Vessel towing"
+      ],
+      "correctIndex": 0,
+      "explanation": "A black cylinder = vessel constrained by her draught. (COLREGS Rule 28)",
+      "elements": [
+        {
+          "x": 0.5,
+          "y": 0.32,
+          "kind": "CYLINDER",
+          "color": "BLACK"
+        }
+      ]
+    },
+    {
+      "id": "d05",
+      "category": "shapes",
+      "isDay": true,
+      "question": "Three black balls in a vertical line. What vessel is it?",
+      "options": [
+        "Vessel aground",
+        "Vessel not under command",
+        "Vessel constrained by her draught"
+      ],
+      "correctIndex": 0,
+      "explanation": "Three black balls in a vertical line = vessel aground. (COLREGS Rule 30(d))",
+      "elements": [
+        {
+          "x": 0.5,
+          "y": 0.18,
+          "kind": "BALL",
+          "color": "BLACK"
+        },
+        {
+          "x": 0.5,
+          "y": 0.32,
+          "kind": "BALL",
+          "color": "BLACK"
+        },
+        {
+          "x": 0.5,
+          "y": 0.46,
+          "kind": "BALL",
+          "color": "BLACK"
+        }
+      ]
+    },
+    {
+      "id": "d06",
+      "category": "shapes",
+      "isDay": true,
+      "question": "Two cones with apexes together. What vessel is it?",
+      "options": [
+        "Vessel engaged in fishing",
+        "Vessel at anchor",
+        "Vessel not under command"
+      ],
+      "correctIndex": 0,
+      "explanation": "Two cones joined at their apexes (one above the other) = vessel engaged in fishing. (COLREGS Rule 26)",
+      "elements": [
+        {
+          "x": 0.5,
+          "y": 0.28,
+          "kind": "CONE_DOWN",
+          "color": "BLACK"
+        },
+        {
+          "x": 0.5,
+          "y": 0.44,
+          "kind": "CONE_UP",
+          "color": "BLACK"
+        }
+      ]
+    },
+    {
+      "id": "d07",
+      "category": "shapes",
+      "isDay": true,
+      "question": "Two cones apexes together AND a cone pointing upward to the side. What is it?",
+      "options": [
+        "Vessel engaged in fishing with gear extending more than 150 m horizontally",
+        "Vessel engaged in trawling",
+        "Vessel at anchor"
+      ],
+      "correctIndex": 0,
+      "explanation": "A vessel engaged in fishing (other than trawling), with gear extending more than 150 m horizontally from the vessel, additionally shows a cone apex upward pointing in the direction of the gear. (COLREGS Rule 26(c))",
+      "elements": [
+        {
+          "x": 0.5,
+          "y": 0.24,
+          "kind": "CONE_DOWN",
+          "color": "BLACK"
+        },
+        {
+          "x": 0.5,
+          "y": 0.4,
+          "kind": "CONE_UP",
+          "color": "BLACK"
+        },
+        {
+          "x": 0.74,
+          "y": 0.4,
+          "kind": "CONE_UP",
+          "color": "BLACK",
+          "sizeScale": 0.8
+        }
+      ]
+    },
+    {
+      "id": "d08",
+      "category": "shapes",
+      "isDay": true,
+      "question": "Shape: a cone apex downward. What vessel is it?",
+      "options": [
+        "Sailing vessel also proceeding under power",
+        "Vessel engaged in fishing",
+        "Vessel at anchor"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cone apex downward = sailing vessel proceeding at the same time under power (motorsailing). (COLREGS Rule 25(e))",
+      "elements": [
+        {
+          "x": 0.5,
+          "y": 0.3,
+          "kind": "CONE_DOWN",
+          "color": "BLACK"
+        }
+      ]
+    },
+    {
+      "id": "d09",
+      "category": "shapes",
+      "isDay": true,
+      "question": "A vessel shows a diamond. What does it mean?",
+      "options": [
+        "Vessel towing (length of tow over 200 m)",
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel at anchor"
+      ],
+      "correctIndex": 0,
+      "explanation": "A diamond is shown by the towing and towed vessel when the length of the tow exceeds 200 m. (COLREGS Rule 24)",
+      "elements": [
+        {
+          "x": 0.5,
+          "y": 0.3,
+          "kind": "DIAMOND",
+          "color": "BLACK"
+        }
+      ]
+    },
+    {
+      "id": "d10",
+      "category": "shapes",
+      "isDay": true,
+      "question": "Three black balls in a triangle (at the masthead and yardarm ends). What is it?",
+      "options": [
+        "Vessel engaged in mineclearance",
+        "Vessel aground",
+        "Vessel not under command"
+      ],
+      "correctIndex": 0,
+      "explanation": "Three black balls (one at the masthead, one at each end of the fore yard) = vessel engaged in mineclearance; do not approach closer than 1000 m. (COLREGS Rule 27(f))",
+      "elements": [
+        {
+          "x": 0.5,
+          "y": 0.2,
+          "kind": "BALL",
+          "color": "BLACK"
+        },
+        {
+          "x": 0.34,
+          "y": 0.36,
+          "kind": "BALL",
+          "color": "BLACK"
+        },
+        {
+          "x": 0.66,
+          "y": 0.36,
+          "kind": "BALL",
+          "color": "BLACK"
+        }
+      ]
+    },
+    {
+      "id": "d11",
+      "category": "shapes",
+      "isDay": true,
+      "question": "Shapes: ball - diamond - ball, plus on one side two balls, on the other two diamonds. What is it?",
+      "options": [
+        "Vessel engaged in dredging with an obstruction (two balls = obstruction side, two diamonds = clear side)",
+        "Vessel restricted in her ability to manoeuvre at anchor",
+        "Vessel aground"
+      ],
+      "correctIndex": 0,
+      "explanation": "A vessel engaged in dredging/underwater operations with an obstruction: ball-diamond-ball + two balls on the obstruction side and two diamonds on the side a vessel may pass. (COLREGS Rule 27(d))",
+      "elements": [
+        {
+          "x": 0.5,
+          "y": 0.16,
+          "kind": "BALL",
+          "color": "BLACK"
+        },
+        {
+          "x": 0.5,
+          "y": 0.3,
+          "kind": "DIAMOND",
+          "color": "BLACK"
+        },
+        {
+          "x": 0.5,
+          "y": 0.44,
+          "kind": "BALL",
+          "color": "BLACK"
+        },
+        {
+          "x": 0.3,
+          "y": 0.3,
+          "kind": "BALL",
+          "color": "BLACK",
+          "sizeScale": 0.8
+        },
+        {
+          "x": 0.3,
+          "y": 0.44,
+          "kind": "BALL",
+          "color": "BLACK",
+          "sizeScale": 0.8
+        },
+        {
+          "x": 0.7,
+          "y": 0.3,
+          "kind": "DIAMOND",
+          "color": "BLACK",
+          "sizeScale": 0.8
+        },
+        {
+          "x": 0.7,
+          "y": 0.44,
+          "kind": "DIAMOND",
+          "color": "BLACK",
+          "sizeScale": 0.8
+        }
+      ]
+    }
+  ]
+}

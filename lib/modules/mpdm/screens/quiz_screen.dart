@@ -1,0 +1,188 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../l10n/app_localizations.dart';
+import '../bloc/quiz_bloc.dart';
+import '../models/quiz_card.dart';
+import '../services/progress_service.dart';
+import '../widgets/scene_view.dart';
+import 'result_screen.dart';
+
+/// Quiz view (MVI): renders [QuizState] and dispatches intents to [QuizBloc].
+class QuizScreen extends StatelessWidget {
+  final String title;
+  final List<QuizCard> deck;
+  final QuizMode mode;
+  final ProgressService progress;
+
+  const QuizScreen({
+    super.key,
+    required this.title,
+    required this.deck,
+    required this.mode,
+    required this.progress,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return BlocProvider(
+      create: (_) => QuizBloc(progress: progress, deck: deck, mode: mode)
+        ..add(const QuizStarted()),
+      child: _QuizView(title: title),
+    );
+  }
+}
+
+class _QuizView extends StatelessWidget {
+  final String title;
+  static const _labels = ['A', 'B', 'C'];
+
+  const _QuizView({required this.title});
+
+  Color _buttonColor(QuizState s, int i) {
+    final card = s.card;
+    if (s.isExam) {
+      // Exam: only highlight the selected option (without revealing).
+      if (i == s.selected) return const Color(0xFF1E88E5);
+      return const Color(0xFF37475A);
+    }
+    if (i == s.selected && i == card.correctIndex) {
+      return const Color(0xFF2E7D32);
+    }
+    if (i == s.selected && i != card.correctIndex) {
+      return const Color(0xFFC62828);
+    }
+    if (s.wrongOnThisCard && i == card.correctIndex) {
+      return const Color(0xFF2E7D32);
+    }
+    return const Color(0xFF37475A);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context);
+    return BlocConsumer<QuizBloc, QuizState>(
+      listenWhen: (prev, curr) => !prev.finished && curr.finished,
+      listener: (context, state) {
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(
+            builder: (_) => ResultScreen(
+              score: state.score,
+              total: state.total,
+              mode: state.mode,
+            ),
+          ),
+        );
+      },
+      builder: (context, state) {
+        final card = state.card;
+        final showExplanation =
+            !state.isExam && state.locked && card.explanation.isNotEmpty;
+
+        return Scaffold(
+          appBar: AppBar(
+            title: Text(title),
+            bottom: PreferredSize(
+              preferredSize: const Size.fromHeight(4),
+              child: LinearProgressIndicator(
+                value: (state.index + 1) / state.total,
+                minHeight: 4,
+              ),
+            ),
+          ),
+          body: SafeArea(
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Text(
+                    t.cardCounter(state.index + 1, state.total),
+                    style: Theme.of(context).textTheme.labelLarge,
+                  ),
+                  const SizedBox(height: 12),
+                  SceneView(card: card),
+                  const SizedBox(height: 16),
+                  Text(
+                    card.question,
+                    style: Theme.of(context).textTheme.titleMedium,
+                  ),
+                  const SizedBox(height: 16),
+                  ...List.generate(card.options.length, (i) {
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: 10),
+                      child: SizedBox(
+                        width: double.infinity,
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: _buttonColor(state, i),
+                            foregroundColor: Colors.white,
+                            padding: const EdgeInsets.symmetric(
+                                vertical: 16, horizontal: 20),
+                            alignment: Alignment.centerLeft,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                          onPressed: state.locked
+                              ? null
+                              : () => context
+                                  .read<QuizBloc>()
+                                  .add(OptionSelected(i)),
+                          child: Text(
+                            '${_labels[i]}.  ${card.options[i]}',
+                            style: const TextStyle(fontSize: 15),
+                          ),
+                        ),
+                      ),
+                    );
+                  }),
+                  if (state.isExam) ...[
+                    const SizedBox(height: 8),
+                    SizedBox(
+                      width: double.infinity,
+                      child: FilledButton.icon(
+                        onPressed: state.selected == null
+                            ? null
+                            : () => context
+                                .read<QuizBloc>()
+                                .add(const NextPressed()),
+                        icon: const Icon(Icons.arrow_forward),
+                        label: Text(state.index + 1 >= state.total
+                            ? t.finish
+                            : t.next),
+                        style: FilledButton.styleFrom(
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                        ),
+                      ),
+                    ),
+                  ],
+                  if (showExplanation) ...[
+                    const SizedBox(height: 8),
+                    Container(
+                      padding: const EdgeInsets.all(14),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context)
+                            .colorScheme
+                            .secondaryContainer,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Text(
+                        card.explanation,
+                        style: TextStyle(
+                          color: Theme.of(context)
+                              .colorScheme
+                              .onSecondaryContainer,
+                        ),
+                      ),
+                    ),
+                  ],
+                ],
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+}

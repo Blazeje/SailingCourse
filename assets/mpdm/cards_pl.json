@@ -1,0 +1,552 @@
+{
+  "version": 1,
+  "cards": [
+    {
+      "id": "n01",
+      "category": "lights",
+      "isDay": false,
+      "question": "Widzisz te światła z przodu. Jaki to statek?",
+      "options": [
+        "Statek o napędzie mechanicznym w drodze (poniżej 50 m)",
+        "Statek na kotwicy",
+        "Żaglowiec w drodze"
+      ],
+      "correctIndex": 0,
+      "explanation": "Jedno światło masztowe (białe) + światła burtowe = statek o napędzie mechanicznym w drodze, krótszy niż 50 m. (Prawidło 23 COLREGS)",
+      "elements": [
+        {"x": 0.30, "y": 0.66, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.70, "y": 0.66, "kind": "LIGHT", "color": "GREEN"},
+        {"x": 0.50, "y": 0.30, "kind": "LIGHT", "color": "WHITE"}
+      ]
+    },
+    {
+      "id": "n02",
+      "category": "lights",
+      "isDay": false,
+      "question": "Jaki to statek (widok od dziobu)?",
+      "options": [
+        "Statek o napędzie mechanicznym w drodze, długości 50 m i więcej",
+        "Statek o napędzie mechanicznym poniżej 50 m",
+        "Statek holujący"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dwa światła masztowe (dziobowe niżej, rufowe wyżej) + burtowe = statek o napędzie mechanicznym w drodze, 50 m i dłuższy. (Prawidło 23 COLREGS)",
+      "elements": [
+        {"x": 0.30, "y": 0.66, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.70, "y": 0.66, "kind": "LIGHT", "color": "GREEN"},
+        {"x": 0.50, "y": 0.46, "kind": "LIGHT", "color": "WHITE"},
+        {"x": 0.50, "y": 0.28, "kind": "LIGHT", "color": "WHITE"}
+      ]
+    },
+    {
+      "id": "n03",
+      "category": "lights",
+      "isDay": false,
+      "question": "Które światła widzisz? Jaki to statek?",
+      "options": [
+        "Żaglowiec w drodze",
+        "Statek o napędzie mechanicznym w drodze",
+        "Statek na kotwicy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Same światła burtowe (bez światła masztowego, z rufowym) = żaglowiec w drodze. (Prawidło 25 COLREGS)",
+      "elements": [
+        {"x": 0.30, "y": 0.66, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.70, "y": 0.66, "kind": "LIGHT", "color": "GREEN"}
+      ]
+    },
+    {
+      "id": "n04",
+      "category": "lights",
+      "isDay": false,
+      "question": "Żaglowiec może dodatkowo pokazywać te światła na topie masztu. Co to?",
+      "options": [
+        "Żaglowiec w drodze (światła dodatkowe: czerwone nad zielonym)",
+        "Statek zajęty połowem (nie trałowanie)",
+        "Statek o napędzie mechanicznym"
+      ],
+      "correctIndex": 0,
+      "explanation": "Żaglowiec w drodze może dodatkowo pokazywać na topie masztu dwa światła dookoła widnokręgu: czerwone nad zielonym. (Prawidło 25(c) COLREGS)",
+      "elements": [
+        {"x": 0.30, "y": 0.66, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.70, "y": 0.66, "kind": "LIGHT", "color": "GREEN"},
+        {"x": 0.50, "y": 0.20, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.50, "y": 0.30, "kind": "LIGHT", "color": "GREEN"}
+      ]
+    },
+    {
+      "id": "n05",
+      "category": "lights",
+      "isDay": false,
+      "question": "Statek pokazuje takie światło. Co to znaczy?",
+      "options": [
+        "Statek na kotwicy (poniżej 50 m)",
+        "Statek o napędzie mechanicznym w drodze",
+        "Statek nie odpowiadający za swoje ruchy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Jedno białe światło widoczne dookoła widnokręgu, na dziobie = statek na kotwicy, krótszy niż 50 m. (Prawidło 30 COLREGS)",
+      "elements": [
+        {"x": 0.50, "y": 0.26, "kind": "LIGHT", "color": "WHITE"}
+      ]
+    },
+    {
+      "id": "n06",
+      "category": "lights",
+      "isDay": false,
+      "question": "Białe światło dookoła widnokręgu ORAZ światła burtowe. Jaki to statek?",
+      "options": [
+        "Statek o napędzie mechanicznym poniżej 12 m",
+        "Statek na kotwicy",
+        "Statek nie odpowiadający za swoje ruchy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Statek o napędzie mechanicznym krótszy niż 12 m może zamiast świateł masztowego i rufowego pokazywać jedno białe światło dookoła widnokręgu oraz światła burtowe. (Prawidło 23(d) COLREGS)",
+      "elements": [
+        {"x": 0.30, "y": 0.66, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.70, "y": 0.66, "kind": "LIGHT", "color": "GREEN"},
+        {"x": 0.50, "y": 0.26, "kind": "LIGHT", "color": "WHITE"}
+      ]
+    },
+    {
+      "id": "n07",
+      "category": "lights",
+      "isDay": false,
+      "question": "Jaki to statek?",
+      "options": [
+        "Statek na kotwicy, długości 50 m i więcej",
+        "Statek na kotwicy poniżej 50 m",
+        "Statek o ograniczonej zdolności manewrowej"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dwa białe światła dookoła widnokręgu: dziobowe wyżej, rufowe niżej = statek na kotwicy, 50 m i dłuższy. (Prawidło 30 COLREGS)",
+      "elements": [
+        {"x": 0.50, "y": 0.22, "kind": "LIGHT", "color": "WHITE"},
+        {"x": 0.50, "y": 0.50, "kind": "LIGHT", "color": "WHITE"}
+      ]
+    },
+    {
+      "id": "n08",
+      "category": "lights",
+      "isDay": false,
+      "question": "Dwa czerwone światła jedno nad drugim. Jaki to statek?",
+      "options": [
+        "Statek nie odpowiadający za swoje ruchy (NUC)",
+        "Statek o ograniczonej zdolności manewrowej",
+        "Statek na kotwicy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dwa czerwone światła dookoła widnokręgu w linii pionowej = statek nie odpowiadający za swoje ruchy. (Prawidło 27(a) COLREGS)",
+      "elements": [
+        {"x": 0.50, "y": 0.24, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.50, "y": 0.38, "kind": "LIGHT", "color": "RED"}
+      ]
+    },
+    {
+      "id": "n09",
+      "category": "lights",
+      "isDay": false,
+      "question": "Światła: czerwone – białe – czerwone (pionowo). Jaki to statek?",
+      "options": [
+        "Statek o ograniczonej zdolności manewrowej",
+        "Statek nie odpowiadający za swoje ruchy",
+        "Statek ograniczony swoim zanurzeniem"
+      ],
+      "correctIndex": 0,
+      "explanation": "Czerwone-białe-czerwone dookoła widnokręgu = statek o ograniczonej zdolności manewrowej. (Prawidło 27(b) COLREGS)",
+      "elements": [
+        {"x": 0.50, "y": 0.20, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.50, "y": 0.33, "kind": "LIGHT", "color": "WHITE"},
+        {"x": 0.50, "y": 0.46, "kind": "LIGHT", "color": "RED"}
+      ]
+    },
+    {
+      "id": "n10",
+      "category": "lights",
+      "isDay": false,
+      "question": "Trzy czerwone światła w linii pionowej. Jaki to statek?",
+      "options": [
+        "Statek ograniczony swoim zanurzeniem",
+        "Statek nie odpowiadający za swoje ruchy",
+        "Statek o ograniczonej zdolności manewrowej"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trzy czerwone światła dookoła widnokręgu w linii pionowej (obok normalnych świateł statku o napędzie) = statek ograniczony swoim zanurzeniem. (Prawidło 28 COLREGS)",
+      "elements": [
+        {"x": 0.30, "y": 0.66, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.70, "y": 0.66, "kind": "LIGHT", "color": "GREEN"},
+        {"x": 0.50, "y": 0.18, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.50, "y": 0.30, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.50, "y": 0.42, "kind": "LIGHT", "color": "RED"}
+      ]
+    },
+    {
+      "id": "n11",
+      "category": "lights",
+      "isDay": false,
+      "question": "Zielone nad białym (dookoła widnokręgu). Jaki to statek?",
+      "options": [
+        "Trawler – statek zajęty trałowaniem",
+        "Statek zajęty połowem inny niż trałowanie",
+        "Statek pilotowy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Zielone nad białym (dookoła widnokręgu) = statek zajęty trałowaniem (trawler). (Prawidło 26(b) COLREGS)",
+      "elements": [
+        {"x": 0.30, "y": 0.66, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.70, "y": 0.66, "kind": "LIGHT", "color": "GREEN"},
+        {"x": 0.50, "y": 0.24, "kind": "LIGHT", "color": "GREEN"},
+        {"x": 0.50, "y": 0.37, "kind": "LIGHT", "color": "WHITE"}
+      ]
+    },
+    {
+      "id": "n12",
+      "category": "lights",
+      "isDay": false,
+      "question": "Czerwone nad białym (dookoła widnokręgu). Jaki to statek?",
+      "options": [
+        "Statek zajęty połowem (inny niż trałowanie)",
+        "Trawler",
+        "Statek nie odpowiadający za swoje ruchy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Czerwone nad białym (dookoła widnokręgu) = statek zajęty połowem innym niż trałowanie. (Prawidło 26(c) COLREGS)",
+      "elements": [
+        {"x": 0.30, "y": 0.66, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.70, "y": 0.66, "kind": "LIGHT", "color": "GREEN"},
+        {"x": 0.50, "y": 0.24, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.50, "y": 0.37, "kind": "LIGHT", "color": "WHITE"}
+      ]
+    },
+    {
+      "id": "n13",
+      "category": "lights",
+      "isDay": false,
+      "question": "Białe nad czerwonym (dookoła widnokręgu). Jaki to statek?",
+      "options": [
+        "Statek pilotowy",
+        "Statek zajęty połowem",
+        "Statek nie odpowiadający za swoje ruchy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Białe nad czerwonym (dookoła widnokręgu) = statek pilotowy (ang. „white over red – pilot ahead”). (Prawidło 29 COLREGS)",
+      "elements": [
+        {"x": 0.30, "y": 0.66, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.70, "y": 0.66, "kind": "LIGHT", "color": "GREEN"},
+        {"x": 0.50, "y": 0.24, "kind": "LIGHT", "color": "WHITE"},
+        {"x": 0.50, "y": 0.37, "kind": "LIGHT", "color": "RED"}
+      ]
+    },
+    {
+      "id": "n14",
+      "category": "lights",
+      "isDay": false,
+      "question": "Dwa białe światła masztowe w linii pionowej + burtowe. Jaki to statek?",
+      "options": [
+        "Statek holujący (długość holu do 200 m)",
+        "Statek o napędzie mechanicznym 50 m i więcej",
+        "Statek o ograniczonej zdolności manewrowej"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dwa światła masztowe w linii pionowej = statek holujący, gdy długość holu nie przekracza 200 m. (Prawidło 24 COLREGS)",
+      "elements": [
+        {"x": 0.30, "y": 0.66, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.70, "y": 0.66, "kind": "LIGHT", "color": "GREEN"},
+        {"x": 0.50, "y": 0.44, "kind": "LIGHT", "color": "WHITE"},
+        {"x": 0.50, "y": 0.32, "kind": "LIGHT", "color": "WHITE"}
+      ]
+    },
+    {
+      "id": "n15",
+      "category": "lights",
+      "isDay": false,
+      "question": "Trzy białe światła masztowe w linii pionowej + burtowe. Jaki to statek?",
+      "options": [
+        "Statek holujący, gdy długość holu przekracza 200 m",
+        "Statek holujący do 200 m",
+        "Statek ograniczony swoim zanurzeniem"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trzy światła masztowe w linii pionowej = statek holujący, gdy długość holu przekracza 200 m. (Prawidło 24 COLREGS)",
+      "elements": [
+        {"x": 0.30, "y": 0.66, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.70, "y": 0.66, "kind": "LIGHT", "color": "GREEN"},
+        {"x": 0.50, "y": 0.46, "kind": "LIGHT", "color": "WHITE"},
+        {"x": 0.50, "y": 0.34, "kind": "LIGHT", "color": "WHITE"},
+        {"x": 0.50, "y": 0.22, "kind": "LIGHT", "color": "WHITE"}
+      ]
+    },
+    {
+      "id": "n16",
+      "category": "lights",
+      "isDay": false,
+      "question": "Białe światło kotwiczne oraz dwa czerwone. Jaki to statek?",
+      "options": [
+        "Statek na mieliźnie",
+        "Statek nie odpowiadający za swoje ruchy",
+        "Statek na kotwicy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Światła kotwiczne + dwa czerwone dookoła widnokręgu w linii pionowej = statek na mieliźnie. (Prawidło 30(d) COLREGS)",
+      "elements": [
+        {"x": 0.50, "y": 0.16, "kind": "LIGHT", "color": "WHITE"},
+        {"x": 0.50, "y": 0.30, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.50, "y": 0.42, "kind": "LIGHT", "color": "RED"}
+      ]
+    },
+    {
+      "id": "n17",
+      "category": "lights",
+      "isDay": false,
+      "question": "Normalne światła statku + żółte światło błyskowe dookoła widnokręgu. Co to?",
+      "options": [
+        "Poduszkowiec (statek na poduszce powietrznej) w stanie bezwypornościowym",
+        "Statek pilotowy",
+        "Statek nie odpowiadający za swoje ruchy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Statek na poduszce powietrznej w stanie bezwypornościowym pokazuje, oprócz świateł statku o napędzie mechanicznym, żółte światło błyskowe widoczne dookoła widnokręgu. (Prawidło 23(b) COLREGS)",
+      "elements": [
+        {"x": 0.30, "y": 0.66, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.70, "y": 0.66, "kind": "LIGHT", "color": "GREEN"},
+        {"x": 0.50, "y": 0.30, "kind": "LIGHT", "color": "WHITE"},
+        {"x": 0.50, "y": 0.18, "kind": "LIGHT", "color": "YELLOW"}
+      ]
+    },
+    {
+      "id": "n18",
+      "category": "lights",
+      "isDay": false,
+      "question": "Trzy zielone światła (dookoła widnokręgu) w układzie trójkąta + światła statku o napędzie. Jaki to statek?",
+      "options": [
+        "Statek zajęty usuwaniem min",
+        "Statek zajęty połowem",
+        "Statek o ograniczonej zdolności manewrowej"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trzy zielone światła dookoła widnokręgu (jedno na topie masztu, po jednym na końcach rei) = statek zajęty usuwaniem min. Oznaczają, że niebezpiecznie jest zbliżać się na odległość mniejszą niż 1000 m. (Prawidło 27(f) COLREGS)",
+      "elements": [
+        {"x": 0.30, "y": 0.66, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.70, "y": 0.66, "kind": "LIGHT", "color": "GREEN"},
+        {"x": 0.50, "y": 0.44, "kind": "LIGHT", "color": "WHITE"},
+        {"x": 0.50, "y": 0.20, "kind": "LIGHT", "color": "GREEN"},
+        {"x": 0.36, "y": 0.34, "kind": "LIGHT", "color": "GREEN"},
+        {"x": 0.64, "y": 0.34, "kind": "LIGHT", "color": "GREEN"}
+      ]
+    },
+    {
+      "id": "n19",
+      "category": "lights",
+      "isDay": false,
+      "question": "Czerwone-białe-czerwone (środek) oraz z jednej burty dwa czerwone, z drugiej dwa zielone. Co to?",
+      "options": [
+        "Statek zajęty pogłębianiem z przeszkodą (dwa czerwone = strona przeszkody, dwa zielone = strona wolna)",
+        "Statek na mieliźnie",
+        "Statek ograniczony swoim zanurzeniem"
+      ],
+      "correctIndex": 0,
+      "explanation": "Statek zajęty pogłębianiem lub pracami podwodnymi (o ograniczonej zdolności manewrowej), gdy istnieje przeszkoda: światła RAM (czer-biał-czer) + dwa czerwone po stronie przeszkody i dwa zielone po stronie, którą można przejść. (Prawidło 27(d) COLREGS)",
+      "elements": [
+        {"x": 0.50, "y": 0.18, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.50, "y": 0.30, "kind": "LIGHT", "color": "WHITE"},
+        {"x": 0.50, "y": 0.42, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.30, "y": 0.30, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.30, "y": 0.42, "kind": "LIGHT", "color": "RED"},
+        {"x": 0.70, "y": 0.30, "kind": "LIGHT", "color": "GREEN"},
+        {"x": 0.70, "y": 0.42, "kind": "LIGHT", "color": "GREEN"}
+      ]
+    },
+    {
+      "id": "d01",
+      "category": "shapes",
+      "isDay": true,
+      "question": "Statek pokazuje ten znak w dzień. Co to znaczy?",
+      "options": [
+        "Statek na kotwicy",
+        "Statek nie odpowiadający za swoje ruchy",
+        "Statek na mieliźnie"
+      ],
+      "correctIndex": 0,
+      "explanation": "Jedna czarna kula na dziobie = statek na kotwicy. (Prawidło 30 COLREGS)",
+      "elements": [
+        {"x": 0.50, "y": 0.30, "kind": "BALL", "color": "BLACK"}
+      ]
+    },
+    {
+      "id": "d02",
+      "category": "shapes",
+      "isDay": true,
+      "question": "Dwie czarne kule jedna nad drugą. Jaki to statek?",
+      "options": [
+        "Statek nie odpowiadający za swoje ruchy",
+        "Statek na kotwicy",
+        "Statek ograniczony swoim zanurzeniem"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dwie czarne kule w linii pionowej = statek nie odpowiadający za swoje ruchy. (Prawidło 27(a) COLREGS)",
+      "elements": [
+        {"x": 0.50, "y": 0.24, "kind": "BALL", "color": "BLACK"},
+        {"x": 0.50, "y": 0.44, "kind": "BALL", "color": "BLACK"}
+      ]
+    },
+    {
+      "id": "d03",
+      "category": "shapes",
+      "isDay": true,
+      "question": "Znaki: kula – romb – kula (pionowo). Jaki to statek?",
+      "options": [
+        "Statek o ograniczonej zdolności manewrowej",
+        "Statek nie odpowiadający za swoje ruchy",
+        "Statek na mieliźnie"
+      ],
+      "correctIndex": 0,
+      "explanation": "Kula-romb-kula = statek o ograniczonej zdolności manewrowej. (Prawidło 27(b) COLREGS)",
+      "elements": [
+        {"x": 0.50, "y": 0.20, "kind": "BALL", "color": "BLACK"},
+        {"x": 0.50, "y": 0.34, "kind": "DIAMOND", "color": "BLACK"},
+        {"x": 0.50, "y": 0.48, "kind": "BALL", "color": "BLACK"}
+      ]
+    },
+    {
+      "id": "d04",
+      "category": "shapes",
+      "isDay": true,
+      "question": "Statek pokazuje walec (cylinder). Co to znaczy?",
+      "options": [
+        "Statek ograniczony swoim zanurzeniem",
+        "Statek na kotwicy",
+        "Statek holujący"
+      ],
+      "correctIndex": 0,
+      "explanation": "Czarny walec = statek ograniczony swoim zanurzeniem. (Prawidło 28 COLREGS)",
+      "elements": [
+        {"x": 0.50, "y": 0.32, "kind": "CYLINDER", "color": "BLACK"}
+      ]
+    },
+    {
+      "id": "d05",
+      "category": "shapes",
+      "isDay": true,
+      "question": "Trzy czarne kule w linii pionowej. Jaki to statek?",
+      "options": [
+        "Statek na mieliźnie",
+        "Statek nie odpowiadający za swoje ruchy",
+        "Statek ograniczony swoim zanurzeniem"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trzy czarne kule w linii pionowej = statek na mieliźnie. (Prawidło 30(d) COLREGS)",
+      "elements": [
+        {"x": 0.50, "y": 0.18, "kind": "BALL", "color": "BLACK"},
+        {"x": 0.50, "y": 0.32, "kind": "BALL", "color": "BLACK"},
+        {"x": 0.50, "y": 0.46, "kind": "BALL", "color": "BLACK"}
+      ]
+    },
+    {
+      "id": "d06",
+      "category": "shapes",
+      "isDay": true,
+      "question": "Dwa stożki wierzchołkami do siebie. Jaki to statek?",
+      "options": [
+        "Statek zajęty połowem",
+        "Statek na kotwicy",
+        "Statek nie odpowiadający za swoje ruchy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dwa stożki złączone wierzchołkami (jeden nad drugim) = statek zajęty połowem. (Prawidło 26 COLREGS)",
+      "elements": [
+        {"x": 0.50, "y": 0.28, "kind": "CONE_DOWN", "color": "BLACK"},
+        {"x": 0.50, "y": 0.44, "kind": "CONE_UP", "color": "BLACK"}
+      ]
+    },
+    {
+      "id": "d07",
+      "category": "shapes",
+      "isDay": true,
+      "question": "Dwa stożki wierzchołkami do siebie ORAZ stożek wierzchołkiem do góry z boku. Co to?",
+      "options": [
+        "Statek zajęty połowem z narzędziami sięgającymi w poziomie ponad 150 m",
+        "Statek zajęty trałowaniem",
+        "Statek na kotwicy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Statek zajęty połowem (innym niż trałowanie), gdy narzędzia połowowe sięgają w poziomie ponad 150 m od statku, pokazuje dodatkowo stożek wierzchołkiem do góry skierowany w stronę narzędzi. (Prawidło 26(c) COLREGS)",
+      "elements": [
+        {"x": 0.50, "y": 0.24, "kind": "CONE_DOWN", "color": "BLACK"},
+        {"x": 0.50, "y": 0.40, "kind": "CONE_UP", "color": "BLACK"},
+        {"x": 0.74, "y": 0.40, "kind": "CONE_UP", "color": "BLACK", "sizeScale": 0.8}
+      ]
+    },
+    {
+      "id": "d08",
+      "category": "shapes",
+      "isDay": true,
+      "question": "Znak: stożek wierzchołkiem do dołu. Jaki to statek?",
+      "options": [
+        "Żaglowiec idący jednocześnie na silniku",
+        "Statek zajęty połowem",
+        "Statek na kotwicy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Stożek wierzchołkiem w dół = żaglowiec poruszający się jednocześnie za pomocą silnika. (Prawidło 25(e) COLREGS)",
+      "elements": [
+        {"x": 0.50, "y": 0.30, "kind": "CONE_DOWN", "color": "BLACK"}
+      ]
+    },
+    {
+      "id": "d09",
+      "category": "shapes",
+      "isDay": true,
+      "question": "Statek pokazuje romb. Co to znaczy?",
+      "options": [
+        "Statek holujący (długość holu ponad 200 m)",
+        "Statek o ograniczonej zdolności manewrowej",
+        "Statek na kotwicy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Romb pokazują statek holujący i holowany, gdy długość holu przekracza 200 m. (Prawidło 24 COLREGS)",
+      "elements": [
+        {"x": 0.50, "y": 0.30, "kind": "DIAMOND", "color": "BLACK"}
+      ]
+    },
+    {
+      "id": "d10",
+      "category": "shapes",
+      "isDay": true,
+      "question": "Trzy czarne kule w układzie trójkąta (na topie masztu i na końcach rei). Co to?",
+      "options": [
+        "Statek zajęty usuwaniem min",
+        "Statek na mieliźnie",
+        "Statek nie odpowiadający za swoje ruchy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trzy czarne kule (jedna na topie masztu, po jednej na końcach przedniej rei) = statek zajęty usuwaniem min; nie zbliżać się na mniej niż 1000 m. (Prawidło 27(f) COLREGS)",
+      "elements": [
+        {"x": 0.50, "y": 0.20, "kind": "BALL", "color": "BLACK"},
+        {"x": 0.34, "y": 0.36, "kind": "BALL", "color": "BLACK"},
+        {"x": 0.66, "y": 0.36, "kind": "BALL", "color": "BLACK"}
+      ]
+    },
+    {
+      "id": "d11",
+      "category": "shapes",
+      "isDay": true,
+      "question": "Znaki: kula – romb – kula, a dodatkowo z jednej burty dwie kule, z drugiej dwa romby. Co to?",
+      "options": [
+        "Statek zajęty pogłębianiem z przeszkodą (dwie kule = strona przeszkody, dwa romby = strona wolna)",
+        "Statek o ograniczonej zdolności manewrowej na kotwicy",
+        "Statek na mieliźnie"
+      ],
+      "correctIndex": 0,
+      "explanation": "Statek zajęty pogłębianiem/pracami podwodnymi z przeszkodą: kula-romb-kula + dwie kule po stronie przeszkody i dwa romby po stronie, którą można przejść. (Prawidło 27(d) COLREGS)",
+      "elements": [
+        {"x": 0.50, "y": 0.16, "kind": "BALL", "color": "BLACK"},
+        {"x": 0.50, "y": 0.30, "kind": "DIAMOND", "color": "BLACK"},
+        {"x": 0.50, "y": 0.44, "kind": "BALL", "color": "BLACK"},
+        {"x": 0.30, "y": 0.30, "kind": "BALL", "color": "BLACK", "sizeScale": 0.8},
+        {"x": 0.30, "y": 0.44, "kind": "BALL", "color": "BLACK", "sizeScale": 0.8},
+        {"x": 0.70, "y": 0.30, "kind": "DIAMOND", "color": "BLACK", "sizeScale": 0.8},
+        {"x": 0.70, "y": 0.44, "kind": "DIAMOND", "color": "BLACK", "sizeScale": 0.8}
+      ]
+    }
+  ]
+}

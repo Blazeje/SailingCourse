@@ -1,0 +1,53 @@
+{
+  "@@locale": "pl",
+
+  "appTitle": "Kurs żeglarski",
+  "comingSoon": "Wkrótce",
+  "cancel": "Anuluj",
+
+  "moduleMpdmTitle": "MPDM – Światła i znaki",
+  "moduleMpdmSubtitle": "Międzynarodowe Prawo Drogi Morskiej (Prawidła 20–31)",
+  "moduleKnotsTitle": "Węzły żeglarskie",
+  "moduleNavigationTitle": "Nawigacja",
+
+  "chooseLearnScope": "Wybierz zakres nauki",
+  "scopeAll": "Wszystko ({count})",
+  "scopeLights": "Światła ({count})",
+  "scopeShapes": "Znaki dzienne ({count})",
+  "learn": "Nauka",
+  "learnLights": "Nauka – światła",
+  "learnShapes": "Nauka – znaki",
+  "statistics": "Statystyki",
+  "learnSubtitle": "Ucz się z podpowiedziami i wyjaśnieniami",
+  "reviews": "Powtórki (SRS)",
+  "reviewsShort": "Powtórki",
+  "dueToday": "Do powtórzenia dziś: {count}",
+  "noReviews": "Brak kart do powtórki – wróć później",
+  "exam": "Egzamin",
+  "examSubtitle": "Wszystkie karty, bez podpowiedzi. Rekord: {score}%",
+
+  "cardCounter": "Karta {current} / {total}",
+  "next": "Dalej",
+  "finish": "Zakończ",
+
+  "result": "Wynik",
+  "examPassed": "Zdane! (próg 75%)",
+  "examFailed": "Nie zdane (próg 75%)",
+  "correctFirstTry": "poprawne odpowiedzi za pierwszym razem",
+  "backToMenu": "Powrót do menu",
+
+  "statSeen": "Poznane karty",
+  "statMastered": "Opanowane (interwał ≥ 7 dni)",
+  "statAccuracy": "Łączna skuteczność",
+  "accuracyValue": "{percent}%  ({correct}/{total})",
+  "statBestExam": "Najlepszy wynik egzaminu",
+  "fraction": "{part} / {whole}",
+  "percentValue": "{value}%",
+  "resetConfirmTitle": "Zresetować postępy?",
+  "resetConfirmBody": "Usunie to wszystkie dane nauki, powtórek i rekord egzaminu.",
+  "reset": "Resetuj",
+  "resetProgress": "Resetuj postępy",
+
+  "language": "Język",
+  "systemDefault": "Domyślny systemu"
+}
