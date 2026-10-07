@@ -62,22 +62,28 @@ class _QuizView extends StatelessWidget {
   Widget build(BuildContext context) {
     final t = AppLocalizations.of(context);
     return BlocConsumer<QuizBloc, QuizState>(
-      listenWhen: (prev, curr) => !prev.finished && curr.finished,
+      listenWhen: (prev, curr) =>
+          (!prev.finished && curr.finished) ||
+          (!prev.locked && curr.locked && curr.mode != QuizMode.exam),
       listener: (context, state) {
-        Navigator.of(context).pushReplacement(
-          MaterialPageRoute(
-            builder: (_) => ResultScreen(
-              score: state.score,
-              total: state.total,
-              mode: state.mode,
+        if (state.finished) {
+          Navigator.of(context).pushReplacement(
+            MaterialPageRoute(
+              builder: (_) => ResultScreen(
+                score: state.score,
+                total: state.total,
+                mode: state.mode,
+              ),
             ),
-          ),
-        );
+          );
+          return;
+        }
+        // Learn / review: a correct answer locks the card. Reveal the
+        // explanation in a dialog and advance only after confirmation.
+        _showExplanationDialog(context, state);
       },
       builder: (context, state) {
         final card = state.card;
-        final showExplanation =
-            !state.isExam && state.locked && card.explanation.isNotEmpty;
 
         return Scaffold(
           appBar: AppBar(
@@ -157,26 +163,6 @@ class _QuizView extends StatelessWidget {
                       ),
                     ),
                   ],
-                  if (showExplanation) ...[
-                    const SizedBox(height: 8),
-                    Container(
-                      padding: const EdgeInsets.all(14),
-                      decoration: BoxDecoration(
-                        color: Theme.of(context)
-                            .colorScheme
-                            .secondaryContainer,
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Text(
-                        card.explanation,
-                        style: TextStyle(
-                          color: Theme.of(context)
-                              .colorScheme
-                              .onSecondaryContainer,
-                        ),
-                      ),
-                    ),
-                  ],
                 ],
               ),
             ),
@@ -184,5 +170,40 @@ class _QuizView extends StatelessWidget {
         );
       },
     );
+  }
+
+  Future<void> _showExplanationDialog(
+    BuildContext context,
+    QuizState state,
+  ) async {
+    final t = AppLocalizations.of(context);
+    final card = state.card;
+    final isLast = state.index + 1 >= state.total;
+    final body = card.explanation.isNotEmpty
+        ? card.explanation
+        : card.options[card.correctIndex];
+
+    await showDialog<void>(
+      context: context,
+      barrierDismissible: false,
+      builder: (dialogContext) {
+        return AlertDialog(
+          icon: const Icon(Icons.check_circle, color: Color(0xFF2E7D32)),
+          title: Text(t.correctTitle),
+          content: SingleChildScrollView(child: Text(body)),
+          actions: [
+            FilledButton.icon(
+              onPressed: () => Navigator.of(dialogContext).pop(),
+              icon: Icon(isLast ? Icons.flag : Icons.arrow_forward),
+              label: Text(isLast ? t.finish : t.next),
+            ),
+          ],
+        );
+      },
+    );
+
+    if (context.mounted) {
+      context.read<QuizBloc>().add(const NextPressed());
+    }
   }
 }

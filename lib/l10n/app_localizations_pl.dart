@@ -98,6 +98,9 @@ class AppLocalizationsPl extends AppLocalizations {
   String get finish => 'Zakończ';
 
   @override
+  String get correctTitle => 'Dobrze!';
+
+  @override
   String get result => 'Wynik';
 
   @override

@@ -121,14 +121,14 @@ class QuizBloc extends Bloc<QuizEvent, QuizState> {
     // Learn / review mode.
     if (correct) {
       final gained = !state.wrongOnThisCard;
+      // Lock the card and reveal the explanation. The view shows a dialog and
+      // advancing happens only when the user confirms ("Next").
       emit(state.copyWith(
         selected: event.index,
         locked: true,
         score: gained ? state.score + 1 : state.score,
       ));
       await progress.recordAnswer(card.id, gained);
-      await Future.delayed(const Duration(milliseconds: 1100));
-      _advance(emit);
     } else {
       emit(state.copyWith(selected: event.index, wrongOnThisCard: true));
     }
@@ -138,13 +138,21 @@ class QuizBloc extends Bloc<QuizEvent, QuizState> {
     NextPressed event,
     Emitter<QuizState> emit,
   ) async {
-    if (!state.isExam || state.selected == null) return;
-    final card = state.card;
-    final correct = state.selected == card.correctIndex;
-    await progress.recordAnswer(card.id, correct);
-    emit(state.copyWith(
-      score: correct ? state.score + 1 : state.score,
-    ));
+    if (state.isExam) {
+      if (state.selected == null) return;
+      final card = state.card;
+      final correct = state.selected == card.correctIndex;
+      await progress.recordAnswer(card.id, correct);
+      emit(state.copyWith(
+        score: correct ? state.score + 1 : state.score,
+      ));
+      _advance(emit);
+      return;
+    }
+
+    // Learn / review mode: advance only after a card has been answered
+    // correctly (locked) and the explanation has been acknowledged.
+    if (!state.locked) return;
     _advance(emit);
   }
 

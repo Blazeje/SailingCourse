@@ -85,21 +85,51 @@ void main() {
 
   group('QuizBloc - learn mode', () {
     blocTest<QuizBloc, QuizState>(
-      'GIVEN learn WHEN correct answer THEN score increases and advances to next card',
+      'GIVEN learn WHEN correct answer THEN score increases, card locks and stays',
       build: () => QuizBloc(
         progress: progress,
         deck: [buildCard(id: 'a'), buildCard(id: 'b')],
         mode: QuizMode.learn,
       ),
       act: (bloc) => bloc.add(OptionSelected(bloc.state.card.correctIndex)),
-      wait: const Duration(milliseconds: 1200),
       verify: (bloc) {
-        // THEN: a point is scored and we are on the second card.
+        // THEN: a point is scored, the card is locked and no auto-advance.
+        expect(bloc.state.score, 1);
+        expect(bloc.state.locked, true);
+        expect(bloc.state.index, 0);
+        expect(bloc.state.finished, false);
+      },
+    );
+
+    blocTest<QuizBloc, QuizState>(
+      'GIVEN learn WHEN correct answer then Next THEN advances to next card',
+      build: () => QuizBloc(
+        progress: progress,
+        deck: [buildCard(id: 'a'), buildCard(id: 'b')],
+        mode: QuizMode.learn,
+      ),
+      act: (bloc) {
+        bloc.add(OptionSelected(bloc.state.card.correctIndex));
+        bloc.add(const NextPressed());
+      },
+      verify: (bloc) {
+        // THEN: we are on the second card with a fresh selection.
         expect(bloc.state.score, 1);
         expect(bloc.state.index, 1);
         expect(bloc.state.finished, false);
         expect(bloc.state.selected, isNull);
       },
+    );
+
+    blocTest<QuizBloc, QuizState>(
+      'GIVEN learn WHEN Next pressed before answering THEN nothing happens',
+      build: () => QuizBloc(
+        progress: progress,
+        deck: [buildCard(id: 'a'), buildCard(id: 'b')],
+        mode: QuizMode.learn,
+      ),
+      act: (bloc) => bloc.add(const NextPressed()),
+      expect: () => const <QuizState>[],
     );
 
     blocTest<QuizBloc, QuizState>(

@@ -29,6 +29,7 @@
   "cardCounter": "Karta {current} / {total}",
   "next": "Dalej",
   "finish": "Zakończ",
+  "correctTitle": "Dobrze!",
 
   "result": "Wynik",
   "examPassed": "Zdane! (próg 75%)",

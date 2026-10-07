@@ -53,6 +53,10 @@
   },
   "next": "Next",
   "finish": "Finish",
+  "correctTitle": "Correct!",
+  "@correctTitle": {
+    "description": "Title of the explanation dialog shown after a correct answer."
+  },
 
   "result": "Result",
   "examPassed": "Passed! (threshold 75%)",

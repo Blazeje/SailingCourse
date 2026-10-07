@@ -98,6 +98,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get finish => 'Finish';
 
   @override
+  String get correctTitle => 'Correct!';
+
+  @override
   String get result => 'Result';
 
   @override

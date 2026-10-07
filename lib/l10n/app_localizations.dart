@@ -248,6 +248,12 @@ abstract class AppLocalizations {
   /// **'Finish'**
   String get finish;
 
+  /// Title of the explanation dialog shown after a correct answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct!'**
+  String get correctTitle;
+
   /// No description provided for @result.
   ///
   /// In en, this message translates to:
