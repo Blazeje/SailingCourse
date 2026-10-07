@@ -1,21 +1,23 @@
 import 'package:flutter/material.dart';
+
 import '../../shared/quiz/data/card_repository.dart';
 import '../../shared/quiz/services/progress_service.dart';
-import 'screens/home_screen.dart';
+import 'screens/rescue_home_screen.dart';
 
-/// Standalone entry point of the MPDM module.
-/// Initializes its own dependencies (card repository + progress)
-/// and shows the module home screen.
-class MpdmModule extends StatefulWidget {
-  const MpdmModule({super.key});
+/// Standalone entry point of the rescue & safety module.
+/// Initializes its own dependencies (card repository + progress) and shows the
+/// module home screen. Uses a dedicated progress namespace and asset folder so
+/// it stays independent from other modules.
+class RescueModule extends StatefulWidget {
+  const RescueModule({super.key});
 
   @override
-  State<MpdmModule> createState() => _MpdmModuleState();
+  State<RescueModule> createState() => _RescueModuleState();
 }
 
-class _MpdmModuleState extends State<MpdmModule> {
-  final CardRepository _repository = CardRepository();
-  final ProgressService _progress = ProgressService();
+class _RescueModuleState extends State<RescueModule> {
+  final CardRepository _repository = CardRepository(assetModule: 'rescue');
+  final ProgressService _progress = ProgressService(namespace: 'rescue');
   late final Future<void> _init;
 
   @override
@@ -36,7 +38,7 @@ class _MpdmModuleState extends State<MpdmModule> {
             body: Center(child: CircularProgressIndicator()),
           );
         }
-        return HomeScreen(
+        return RescueHomeScreen(
           key: ValueKey(lang),
           repository: _repository,
           progress: _progress,

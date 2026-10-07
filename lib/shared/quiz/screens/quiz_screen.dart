@@ -107,8 +107,10 @@ class _QuizView extends StatelessWidget {
                     style: Theme.of(context).textTheme.labelLarge,
                   ),
                   const SizedBox(height: 12),
-                  SceneView(card: card),
-                  const SizedBox(height: 16),
+                  if (card.hasScene) ...[
+                    SceneView(card: card),
+                    const SizedBox(height: 16),
+                  ],
                   Text(
                     card.question,
                     style: Theme.of(context).textTheme.titleMedium,

@@ -4,16 +4,21 @@ import '../models/quiz_card.dart';
 
 /// Loads quiz cards from a local, per-language JSON file (offline-first).
 ///
-/// The active [languageCode] selects the asset (e.g. `cards_en.json`).
-/// Unsupported codes fall back to Polish. Results are cached per language.
+/// The active [languageCode] selects the asset (e.g. `cards_en.json`) inside
+/// the module's asset folder (`assets/<assetModule>/`). Unsupported codes fall
+/// back to Polish. Results are cached per language.
 class CardRepository {
   static const _supported = {'pl', 'en'};
   static const _fallback = 'pl';
 
+  final String assetModule;
   String languageCode;
   final Map<String, List<QuizCard>> _cache = {};
 
-  CardRepository({this.languageCode = _fallback});
+  CardRepository({
+    this.languageCode = _fallback,
+    this.assetModule = 'mpdm',
+  });
 
   String get _resolvedLanguage =>
       _supported.contains(languageCode) ? languageCode : _fallback;
@@ -22,7 +27,8 @@ class CardRepository {
     final lang = _resolvedLanguage;
     final cached = _cache[lang];
     if (cached != null) return cached;
-    final raw = await rootBundle.loadString('assets/mpdm/cards_$lang.json');
+    final raw =
+        await rootBundle.loadString('assets/$assetModule/cards_$lang.json');
     final data = json.decode(raw) as Map<String, dynamic>;
     final cards = (data['cards'] as List)
         .map((e) => QuizCard.fromJson(e as Map<String, dynamic>))

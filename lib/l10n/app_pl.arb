@@ -9,6 +9,8 @@
   "moduleMpdmSubtitle": "Międzynarodowe Prawo Drogi Morskiej (Prawidła 20–31)",
   "moduleKnotsTitle": "Węzły żeglarskie",
   "moduleNavigationTitle": "Nawigacja",
+  "moduleRescueTitle": "Ratownictwo",
+  "moduleRescueSubtitle": "SART, ewakuacja helikopterem, MOB, tratwa, sygnały wzywania pomocy",
 
   "chooseLearnScope": "Wybierz zakres nauki",
   "scopeAll": "Wszystko ({count})",

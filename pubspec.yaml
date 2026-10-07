@@ -71,6 +71,8 @@ flutter:
   assets:
     - assets/mpdm/cards_pl.json
     - assets/mpdm/cards_en.json
+    - assets/rescue/cards_pl.json
+    - assets/rescue/cards_en.json
 
   # To add assets to your application, add an assets section, like this:
   # assets:

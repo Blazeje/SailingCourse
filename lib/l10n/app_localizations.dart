@@ -140,6 +140,18 @@ abstract class AppLocalizations {
   /// **'Navigation'**
   String get moduleNavigationTitle;
 
+  /// Title of the rescue & safety module.
+  ///
+  /// In en, this message translates to:
+  /// **'Rescue & safety'**
+  String get moduleRescueTitle;
+
+  /// Subtitle of the rescue & safety module.
+  ///
+  /// In en, this message translates to:
+  /// **'SART, helicopter rescue, MOB, liferaft, distress signals'**
+  String get moduleRescueSubtitle;
+
   /// No description provided for @chooseLearnScope.
   ///
   /// In en, this message translates to:

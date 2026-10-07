@@ -1,9 +1,9 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
 
-import '../data/card_repository.dart';
-import '../models/quiz_card.dart';
-import '../services/progress_service.dart';
+import '../../../shared/quiz/data/card_repository.dart';
+import '../../../shared/quiz/models/quiz_card.dart';
+import '../../../shared/quiz/services/progress_service.dart';
 
 // ------------------------------ INTENTS (Events) -----------------------------
 

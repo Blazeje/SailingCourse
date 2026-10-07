@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
 
-import '../services/progress_service.dart';
+import '../../../shared/quiz/services/progress_service.dart';
 
 // ------------------------------ INTENTS (Events) -----------------------------
 

@@ -1,9 +1,13 @@
 # Sailing Course ⛵
 
 A cross-platform (Android & iOS) Flutter app for studying for the Polish
-sailing-license exam. The app is built as a hub of thematic **modules**; the
-first one, **MPDM**, teaches the COLREGS rules on vessel **lights and day
-shapes**.
+sailing-license exam. The app is built as a hub of thematic **modules** that
+share a common quiz engine:
+
+- **MPDM** – the COLREGS rules on vessel **lights and day shapes** (with
+  scenes drawn on the fly).
+- **Rescue & safety** – text-only knowledge questions (SART, helicopter
+  rescue, man overboard, liferaft, lifejackets, distress signals, first aid).
 
 > **MPDM** = *Międzynarodowe Prawo Drogi Morskiej* (International Regulations
 > for Preventing Collisions at Sea).
@@ -27,7 +31,7 @@ shapes**.
 
 ## Architecture
 
-The MPDM module follows an **MVI** pattern implemented with
+The modules follow an **MVI** pattern implemented with
 [`flutter_bloc`](https://pub.dev/packages/flutter_bloc):
 
 | MVI concept | Implementation |
@@ -37,26 +41,34 @@ The MPDM module follows an **MVI** pattern implemented with
 | Reducer     | the `Bloc` (`QuizBloc`, `HomeBloc`, `StatsBloc`)       |
 | View        | `BlocBuilder` / `BlocConsumer` widgets                  |
 
+The reusable quiz engine (cards, repository, progress, quiz/result screens)
+lives under `lib/shared/quiz/`; each module in `lib/modules/` is a thin layer
+that configures it (its own asset folder and progress namespace).
+
 ```
 lib/
 ├── main.dart                 # App root, hub screen, language switcher
 ├── l10n/                     # ARB files + generated AppLocalizations, LocaleCubit
-└── modules/mpdm/
-    ├── mpdm_module.dart      # Self-initializing module entry point
-    ├── bloc/                 # QuizBloc, HomeBloc, StatsBloc (Event/State/Bloc)
-    ├── data/                 # CardRepository (loads cards_<lang>.json)
-    ├── models/               # QuizCard, SceneElement
-    ├── painters/             # ScenePainter (CustomPainter)
-    ├── services/             # ProgressService (SM-2 SRS, shared_preferences)
-    ├── screens/              # Home / Quiz / Result / Stats views
-    └── widgets/              # SceneView
-assets/mpdm/
-├── cards_pl.json            # 30 cards – Polish
-└── cards_en.json            # 30 cards – English
+├── shared/quiz/              # Reusable quiz engine
+│   ├── bloc/                 # QuizBloc (Event/State/Bloc)
+│   ├── data/                 # CardRepository (loads cards_<lang>.json)
+│   ├── models/               # QuizCard, SceneElement
+│   ├── painters/             # ScenePainter (CustomPainter)
+│   ├── services/             # ProgressService (SM-2 SRS, shared_preferences)
+│   ├── screens/              # Quiz / Result views
+│   └── widgets/              # SceneView
+└── modules/
+    ├── mpdm/                 # Lights & shapes: HomeBloc, StatsBloc, screens
+    │   └── mpdm_module.dart  # Self-initializing module entry point
+    └── rescue/               # Rescue & safety: learn + exam, text-only cards
+        └── rescue_module.dart
+assets/
+├── mpdm/   cards_pl.json / cards_en.json   # 30 cards (lights + shapes)
+└── rescue/ cards_pl.json / cards_en.json   # 12 cards (knowledge questions)
 ```
 
-The deck contains **30 cards**: 19 night/lights (`n01`–`n19`) and 11 day/shapes
-(`d01`–`d11`).
+The MPDM deck contains **30 cards**: 19 night/lights (`n01`–`n19`) and 11
+day/shapes (`d01`–`d11`). The rescue deck contains **12 cards** (`r01`–`r12`).
 
 ## Getting started
 
@@ -84,5 +96,6 @@ Coverage includes the blocs (quiz/home/stats), the SRS `ProgressService`, the
 ## Localization
 
 UI strings live in `lib/l10n/app_<lang>.arb`; quiz content lives in
-`assets/mpdm/cards_<lang>.json`. To add a language, add both files (same keys /
-card ids) and register the language code in `CardRepository`.
+`assets/<module>/cards_<lang>.json`. To add a language, add the ARB file plus a
+card file per module (same keys / card ids) and register the language code in
+`CardRepository`.

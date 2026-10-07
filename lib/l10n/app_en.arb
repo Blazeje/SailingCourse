@@ -12,6 +12,14 @@
   "moduleMpdmSubtitle": "International Regulations for Preventing Collisions at Sea (Rules 20–31)",
   "moduleKnotsTitle": "Sailing knots",
   "moduleNavigationTitle": "Navigation",
+  "moduleRescueTitle": "Rescue & safety",
+  "@moduleRescueTitle": {
+    "description": "Title of the rescue & safety module."
+  },
+  "moduleRescueSubtitle": "SART, helicopter rescue, MOB, liferaft, distress signals",
+  "@moduleRescueSubtitle": {
+    "description": "Subtitle of the rescue & safety module."
+  },
 
   "chooseLearnScope": "Choose a study scope",
   "scopeAll": "Everything ({count})",

@@ -3,11 +3,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../l10n/app_localizations.dart';
 import '../bloc/home_bloc.dart';
-import '../bloc/quiz_bloc.dart';
-import '../data/card_repository.dart';
-import '../models/quiz_card.dart';
-import '../services/progress_service.dart';
-import 'quiz_screen.dart';
+import '../../../shared/quiz/bloc/quiz_bloc.dart';
+import '../../../shared/quiz/data/card_repository.dart';
+import '../../../shared/quiz/models/quiz_card.dart';
+import '../../../shared/quiz/services/progress_service.dart';
+import '../../../shared/quiz/screens/quiz_screen.dart';
 import 'stats_screen.dart';
 
 /// MPDM module home screen (MVI): renders [HomeState].

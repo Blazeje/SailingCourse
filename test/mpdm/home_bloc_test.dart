@@ -3,9 +3,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:sailing_course/modules/mpdm/bloc/home_bloc.dart';
-import 'package:sailing_course/modules/mpdm/data/card_repository.dart';
-import 'package:sailing_course/modules/mpdm/models/quiz_card.dart';
-import 'package:sailing_course/modules/mpdm/services/progress_service.dart';
+import 'package:sailing_course/shared/quiz/data/card_repository.dart';
+import 'package:sailing_course/shared/quiz/models/quiz_card.dart';
+import 'package:sailing_course/shared/quiz/services/progress_service.dart';
 
 import 'helpers.dart';
 

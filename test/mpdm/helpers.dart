@@ -1,5 +1,5 @@
-import 'package:sailing_course/modules/mpdm/models/quiz_card.dart';
-import 'package:sailing_course/modules/mpdm/models/scene_element.dart';
+import 'package:sailing_course/shared/quiz/models/quiz_card.dart';
+import 'package:sailing_course/shared/quiz/models/scene_element.dart';
 
 /// Test card factory (no scene elements - irrelevant to the logic under test).
 QuizCard buildCard({

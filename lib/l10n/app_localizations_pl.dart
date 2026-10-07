@@ -32,6 +32,13 @@ class AppLocalizationsPl extends AppLocalizations {
   String get moduleNavigationTitle => 'Nawigacja';
 
   @override
+  String get moduleRescueTitle => 'Ratownictwo';
+
+  @override
+  String get moduleRescueSubtitle =>
+      'SART, ewakuacja helikopterem, MOB, tratwa, sygnały wzywania pomocy';
+
+  @override
   String get chooseLearnScope => 'Wybierz zakres nauki';
 
   @override

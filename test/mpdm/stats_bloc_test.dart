@@ -3,7 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:sailing_course/modules/mpdm/bloc/stats_bloc.dart';
-import 'package:sailing_course/modules/mpdm/services/progress_service.dart';
+import 'package:sailing_course/shared/quiz/services/progress_service.dart';
 
 void main() {
   late ProgressService progress;

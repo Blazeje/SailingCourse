@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../l10n/app_localizations.dart';
 import '../bloc/stats_bloc.dart';
-import '../services/progress_service.dart';
+import '../../../shared/quiz/services/progress_service.dart';
 
 /// Statistics screen (MVI): renders [StatsState].
 class StatsScreen extends StatelessWidget {

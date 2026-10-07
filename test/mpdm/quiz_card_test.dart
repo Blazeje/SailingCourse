@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:sailing_course/modules/mpdm/models/quiz_card.dart';
-import 'package:sailing_course/modules/mpdm/models/scene_element.dart';
+import 'package:sailing_course/shared/quiz/models/quiz_card.dart';
+import 'package:sailing_course/shared/quiz/models/scene_element.dart';
 
 void main() {
   group('QuizCard.fromJson', () {

@@ -32,6 +32,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get moduleNavigationTitle => 'Navigation';
 
   @override
+  String get moduleRescueTitle => 'Rescue & safety';
+
+  @override
+  String get moduleRescueSubtitle =>
+      'SART, helicopter rescue, MOB, liferaft, distress signals';
+
+  @override
   String get chooseLearnScope => 'Choose a study scope';
 
   @override

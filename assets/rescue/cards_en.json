@@ -1,0 +1,136 @@
+{
+  "cards": [
+    {
+      "id": "r01",
+      "question": "What is a SART (Search and Rescue Transponder)?",
+      "options": [
+        "A device that responds to a 9 GHz radar signal and marks your position on nearby radar screens",
+        "A float-free beacon that sends your GPS position to satellites on 406 MHz",
+        "A handheld VHF radio that works only on channel 16"
+      ],
+      "correctIndex": 0,
+      "explanation": "A SART is a radar transponder. When it is triggered by a 9 GHz (X-band) radar, it replies with a signal that appears on the radar display and points rescuers toward your location."
+    },
+    {
+      "id": "r02",
+      "question": "How does an activated SART appear on a ship's radar screen?",
+      "options": [
+        "As a line of twelve equally spaced blips running outward from your position along the bearing",
+        "As a flashing red circle around the whole screen",
+        "As a written text message showing your coordinates"
+      ],
+      "correctIndex": 0,
+      "explanation": "An activated SART shows a series of 12 equally spaced blips on the radar, starting at the SART and extending outward along the bearing. As the rescuer closes in, the blips widen into arcs."
+    },
+    {
+      "id": "r03",
+      "question": "What does an EPIRB transmit when it is activated?",
+      "options": [
+        "A 406 MHz distress alert with your identity and position to the Cospas-Sarsat satellite system",
+        "A 9 GHz radar echo to nearby vessels",
+        "A spoken voice message on VHF channel 16"
+      ],
+      "correctIndex": 0,
+      "explanation": "An EPIRB (Emergency Position-Indicating Radio Beacon) transmits a coded 406 MHz distress alert, including its beacon ID and GPS position, to search-and-rescue satellites."
+    },
+    {
+      "id": "r04",
+      "question": "A helicopter lowers a line to your boat. What must you do first before handling it?",
+      "options": [
+        "Let the line or strop touch the water or the deck first to discharge static electricity",
+        "Grab it immediately and make it fast to a cleat",
+        "Tie it to the mast so the helicopter can winch the whole boat"
+      ],
+      "correctIndex": 0,
+      "explanation": "A helicopter builds up a large static charge. Always let the winch wire, hi-line or strop touch the sea or the deck before you handle it, otherwise you can receive an electric shock."
+    },
+    {
+      "id": "r05",
+      "question": "While being winched by a helicopter, what must you NEVER do with the winch wire?",
+      "options": [
+        "Make it fast (secure it) to any part of the boat",
+        "Let it earth itself in the water before touching it",
+        "Follow the instructions given by the winch operator"
+      ],
+      "correctIndex": 0,
+      "explanation": "Never secure the helicopter's winch wire to the vessel. If the boat moves or rolls, a made-fast wire could drag the helicopter down. Keep the wire free to run at all times."
+    },
+    {
+      "id": "r06",
+      "question": "How should you treat a conscious crew member suffering from hypothermia?",
+      "options": [
+        "Handle them gently, move them to shelter, remove wet clothing, insulate and rewarm the core gradually, and give warm sweet drinks",
+        "Rub their arms and legs vigorously and give them alcohol to warm up",
+        "Put them straight into a very hot bath and make them exercise"
+      ],
+      "correctIndex": 0,
+      "explanation": "Handle a hypothermia casualty gently, because rough handling can trigger cardiac arrest. Remove wet clothes, insulate them and rewarm the core slowly. Avoid rubbing the limbs, alcohol and sudden intense heat."
+    },
+    {
+      "id": "r07",
+      "question": "What is the correct immediate action the moment someone falls overboard?",
+      "options": [
+        "Shout 'Man overboard', throw a lifebuoy, post a dedicated spotter to point at the person, and press the MOB button on the GPS",
+        "Go below to call a friend before doing anything on deck",
+        "Immediately drop all sails and start preparing a hot drink"
+      ],
+      "correctIndex": 0,
+      "explanation": "Raise the alarm, throw buoyancy at once, keep a dedicated lookout pointing continuously at the casualty, and mark the position (MOB button, or note the time and course)."
+    },
+    {
+      "id": "r08",
+      "question": "Why should a hypothermic man-overboard casualty be recovered horizontally where possible?",
+      "options": [
+        "A sudden vertical lift can cause a dangerous drop in blood pressure and cardiac arrest (post-rescue collapse)",
+        "It simply makes the person easier to photograph",
+        "Horizontal recovery is always faster in every situation"
+      ],
+      "correctIndex": 0,
+      "explanation": "After prolonged immersion, lifting a casualty vertically can trigger circulatory collapse. Recover them as horizontally as practicable and keep them lying down afterwards."
+    },
+    {
+      "id": "r09",
+      "question": "What is the correct sequence when launching a liferaft?",
+      "options": [
+        "Check the painter is secured to a strong point, throw the raft overboard, then pull the painter hard to inflate it",
+        "Throw the raft over the side still packed and jump in after it",
+        "Inflate it on deck first, then lift it into the water"
+      ],
+      "correctIndex": 0,
+      "explanation": "Make sure the painter (operating line) is tied to a strong point on the boat, launch the canister to leeward, then give the painter a sharp pull to fire the gas bottle and inflate the raft."
+    },
+    {
+      "id": "r10",
+      "question": "You have boarded the liferaft. What are the priority actions (remembered as 'cut, stream, close, maintain')?",
+      "options": [
+        "Cut the painter once everyone is aboard and the vessel is clearly lost, stream the drogue, close the canopy, and maintain the raft",
+        "Immediately paddle away from the scene as fast as possible",
+        "Throw away the knife and the bailer to save weight"
+      ],
+      "correctIndex": 0,
+      "explanation": "Once all survivors are aboard: Cut the painter (only after the parent vessel is clearly sinking), Stream the sea-anchor/drogue for stability, Close the canopy to retain warmth, and Maintain the raft (bail, first aid, keep a lookout)."
+    },
+    {
+      "id": "r11",
+      "question": "When should you inflate a lifejacket if you must abandon ship into the water?",
+      "options": [
+        "Once you are clear of the vessel and outside, not while still inside the cabin",
+        "Always inflate it fully before leaving your bunk below deck",
+        "Never inflate it, because it works better deflated"
+      ],
+      "correctIndex": 0,
+      "explanation": "An inflated lifejacket makes it very hard to escape through a hatch or doorway and can trap you inside a flooding cabin. Inflate it only once you are clear of the vessel."
+    },
+    {
+      "id": "r12",
+      "question": "What is the correct use of a red parachute flare versus a red hand-held flare?",
+      "options": [
+        "A red parachute flare raises the alarm over long distances; a red hand-held flare pinpoints your position to rescuers who are already nearby",
+        "Both are only for celebrating at night and carry no distress meaning",
+        "The parachute flare is for close range and the hand-held is for long range"
+      ],
+      "correctIndex": 0,
+      "explanation": "Red parachute (rocket) flares climb high and are seen at long range to alert others. Red hand-held flares guide rescuers onto your exact position once they are close. Orange smoke is the daytime equivalent for pinpointing."
+    }
+  ]
+}

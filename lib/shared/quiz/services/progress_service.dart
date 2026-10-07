@@ -45,10 +45,16 @@ class CardProgress {
 }
 
 /// Manages progress, statistics and the review schedule (SRS).
-/// Dane trzymane lokalnie w SharedPreferences (offline-first).
+/// Data is stored locally in SharedPreferences (offline-first).
+///
+/// Each module uses its own [namespace] so progress is kept separate.
 class ProgressService {
-  static const _progressKey = 'mpdm_progress_v1';
-  static const _bestScoreKey = 'mpdm_best_exam_v1';
+  final String namespace;
+
+  ProgressService({this.namespace = 'mpdm'});
+
+  String get _progressKey => '${namespace}_progress_v1';
+  String get _bestScoreKey => '${namespace}_best_exam_v1';
 
   final Map<String, CardProgress> _progress = {};
   SharedPreferences? _prefs;

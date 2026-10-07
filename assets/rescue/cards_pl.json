@@ -1,0 +1,136 @@
+{
+  "cards": [
+    {
+      "id": "r01",
+      "question": "Czym jest transponder radarowy SART (Search and Rescue Transponder)?",
+      "options": [
+        "Urządzeniem, które odpowiada na sygnał radaru 9 GHz i zaznacza Twoją pozycję na radarach w pobliżu",
+        "Pławą, która wysyła Twoją pozycję GPS do satelitów na częstotliwości 406 MHz",
+        "Ręczną radiostacją VHF działającą wyłącznie na kanale 16"
+      ],
+      "correctIndex": 0,
+      "explanation": "SART to transponder radarowy. Pobudzony sygnałem radaru 9 GHz (pasmo X) odpowiada sygnałem, który pojawia się na ekranie radaru i wskazuje ratownikom Twoją pozycję."
+    },
+    {
+      "id": "r02",
+      "question": "Jak pobudzony SART wygląda na ekranie radaru statku?",
+      "options": [
+        "Jako linia dwunastu równo rozmieszczonych punktów biegnąca od Twojej pozycji wzdłuż namiaru",
+        "Jako migający czerwony okrąg wokół całego ekranu",
+        "Jako komunikat tekstowy z Twoimi współrzędnymi"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pobudzony SART pokazuje serię 12 równo rozmieszczonych punktów na radarze, zaczynających się przy SART i biegnących na zewnątrz wzdłuż namiaru. W miarę zbliżania się ratownika punkty rozszerzają się w łuki."
+    },
+    {
+      "id": "r03",
+      "question": "Co nadaje EPIRB po aktywacji?",
+      "options": [
+        "Sygnał alarmowy 406 MHz z Twoją tożsamością i pozycją do systemu satelitarnego Cospas-Sarsat",
+        "Echo radarowe 9 GHz do jednostek w pobliżu",
+        "Komunikat głosowy na kanale 16 VHF"
+      ],
+      "correctIndex": 0,
+      "explanation": "EPIRB (radiopława awaryjna wskazująca pozycję) nadaje kodowany alarm na 406 MHz, zawierający identyfikator pławy oraz pozycję GPS, do satelitów ratowniczych."
+    },
+    {
+      "id": "r04",
+      "question": "Helikopter opuszcza linę na Twoją łódź. Co musisz zrobić najpierw, zanim jej dotkniesz?",
+      "options": [
+        "Pozwolić, aby lina lub pętla dotknęła najpierw wody lub pokładu, by rozładować ładunek elektrostatyczny",
+        "Chwycić ją natychmiast i zamocować do knagi",
+        "Przywiązać ją do masztu, aby helikopter mógł wciągnąć całą łódź"
+      ],
+      "correctIndex": 0,
+      "explanation": "Helikopter gromadzi duży ładunek elektrostatyczny. Zawsze pozwól, aby lina wciągarki, lina prowadząca lub pętla dotknęła najpierw morza albo pokładu, zanim jej dotkniesz, inaczej możesz zostać porażony prądem."
+    },
+    {
+      "id": "r05",
+      "question": "Podczas podnoszenia przez helikopter, czego NIGDY nie wolno zrobić z liną wciągarki?",
+      "options": [
+        "Zamocować jej na stałe do jakiejkolwiek części łodzi",
+        "Pozwolić jej rozładować się w wodzie, zanim się jej dotknie",
+        "Stosować się do poleceń operatora wciągarki"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nigdy nie mocuj liny wciągarki helikoptera do jednostki. Jeśli łódź się przesunie lub przechyli, zamocowana lina może ściągnąć helikopter w dół. Lina musi zawsze móc swobodnie przelatywać."
+    },
+    {
+      "id": "r06",
+      "question": "Jak udzielić pomocy przytomnemu członkowi załogi z wychłodzeniem (hipotermią)?",
+      "options": [
+        "Obchodzić się z nim delikatnie, przenieść do osłoniętego miejsca, zdjąć mokrą odzież, izolować i ogrzewać stopniowo tułów oraz podać ciepłe słodkie napoje",
+        "Energicznie rozcierać mu ręce i nogi oraz podać alkohol, aby się rozgrzał",
+        "Włożyć go od razu do bardzo gorącej kąpieli i zmusić do wysiłku"
+      ],
+      "correctIndex": 0,
+      "explanation": "Z osobą wychłodzoną obchodź się delikatnie, bo gwałtowne ruchy mogą wywołać zatrzymanie krążenia. Zdejmij mokrą odzież, izoluj ją i ogrzewaj tułów powoli. Unikaj rozcierania kończyn, alkoholu i nagłego intensywnego ciepła."
+    },
+    {
+      "id": "r07",
+      "question": "Jakie jest prawidłowe natychmiastowe działanie w chwili, gdy ktoś wypada za burtę?",
+      "options": [
+        "Krzyknąć 'Człowiek za burtą', rzucić koło ratunkowe, wyznaczyć obserwatora wskazującego osobę i wcisnąć przycisk MOB na GPS",
+        "Zejść pod pokład, by najpierw zadzwonić do znajomego",
+        "Natychmiast rzucić wszystkie żagle i zacząć przygotowywać ciepły napój"
+      ],
+      "correctIndex": 0,
+      "explanation": "Podnieś alarm, natychmiast rzuć coś pływającego, wyznacz obserwatora stale wskazującego poszkodowanego i zaznacz pozycję (przycisk MOB albo zapisz czas i kurs)."
+    },
+    {
+      "id": "r08",
+      "question": "Dlaczego wychłodzonego człowieka wyłowionego zza burty należy w miarę możliwości podnosić w pozycji poziomej?",
+      "options": [
+        "Nagłe pionowe podniesienie może wywołać groźny spadek ciśnienia i zatrzymanie krążenia (zapaść poratunkowa)",
+        "Po prostu łatwiej jest wtedy zrobić zdjęcie",
+        "Podnoszenie poziome jest zawsze szybsze w każdej sytuacji"
+      ],
+      "correctIndex": 0,
+      "explanation": "Po długim przebywaniu w wodzie pionowe podniesienie poszkodowanego może wywołać zapaść krążeniową. Wyławiaj go możliwie poziomo i pozostaw później w pozycji leżącej."
+    },
+    {
+      "id": "r09",
+      "question": "Jaka jest prawidłowa kolejność przy wodowaniu tratwy ratunkowej?",
+      "options": [
+        "Sprawdzić, czy lina (fał) jest zamocowana do mocnego punktu, wyrzucić tratwę za burtę, a następnie mocno pociągnąć linę, by ją napompować",
+        "Wyrzucić tratwę za burtę w opakowaniu i skoczyć za nią",
+        "Najpierw napompować ją na pokładzie, a potem wrzucić do wody"
+      ],
+      "correctIndex": 0,
+      "explanation": "Upewnij się, że lina operacyjna (fał) jest przywiązana do mocnego punktu na łodzi, zwoduj pojemnik na zawietrznej, a następnie szarpnij mocno linę, aby otworzyć butlę z gazem i napompować tratwę."
+    },
+    {
+      "id": "r10",
+      "question": "Jesteś już na tratwie ratunkowej. Jakie są działania priorytetowe (zasada: odciąć, wyrzucić, zamknąć, utrzymać)?",
+      "options": [
+        "Odciąć linę, gdy wszyscy są na pokładzie i jednostka jest już stracona, wyrzucić dryfkotwę, zamknąć osłonę i utrzymywać tratwę",
+        "Natychmiast odpłynąć od miejsca zdarzenia najszybciej jak się da",
+        "Wyrzucić nóż i czerpak, aby zmniejszyć ciężar"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gdy wszyscy rozbitkowie są na pokładzie: Odetnij linę (dopiero gdy jednostka macierzysta wyraźnie tonie), wyrzuć dryfkotwę dla stabilności, zamknij osłonę, aby zachować ciepło, i utrzymuj tratwę (wybieraj wodę, pierwsza pomoc, obserwacja)."
+    },
+    {
+      "id": "r11",
+      "question": "Kiedy należy napompować kamizelkę ratunkową, gdy trzeba opuścić łódź do wody?",
+      "options": [
+        "Dopiero gdy jesteś poza jednostką, na zewnątrz, a nie będąc jeszcze w kabinie",
+        "Zawsze napompować ją w pełni jeszcze przed opuszczeniem koi pod pokładem",
+        "Nigdy jej nie pompować, bo lepiej działa nienapompowana"
+      ],
+      "correctIndex": 0,
+      "explanation": "Napompowana kamizelka bardzo utrudnia wydostanie się przez luk lub drzwi i może uwięzić Cię w zalewanej kabinie. Pompuj ją dopiero, gdy jesteś już poza jednostką."
+    },
+    {
+      "id": "r12",
+      "question": "Jak prawidłowo stosuje się czerwoną rakietę spadochronową w odróżnieniu od czerwonej pochodni ręcznej?",
+      "options": [
+        "Czerwona rakieta spadochronowa alarmuje na dużą odległość, a czerwona pochodnia ręczna wskazuje Twoją dokładną pozycję ratownikom będącym już w pobliżu",
+        "Obie służą tylko do świętowania nocą i nie mają znaczenia sygnału wzywania pomocy",
+        "Rakieta spadochronowa służy do bliskiego zasięgu, a pochodnia ręczna do dużego zasięgu"
+      ],
+      "correctIndex": 0,
+      "explanation": "Czerwone rakiety spadochronowe wznoszą się wysoko i są widoczne z dużej odległości, by zaalarmować innych. Czerwone pochodnie ręczne naprowadzają ratowników na Twoją dokładną pozycję, gdy są już blisko. Pomarańczowy dym to dzienny odpowiednik do wskazywania pozycji."
+    }
+  ]
+}

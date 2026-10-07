@@ -12,17 +12,21 @@ enum CardCategory {
       case 'shapes':
         return CardCategory.shapes;
       default:
-        throw ArgumentError('Nieznana kategoria: $value');
+        throw ArgumentError('Unknown category: $value');
     }
   }
 
-  String get label => this == CardCategory.lights ? 'Światła' : 'Znaki dzienne';
+  String get label =>
+      this == CardCategory.lights ? 'Lights' : 'Day shapes';
 }
 
-/// Quiz card: scene + question + three A/B/C answers.
+/// Quiz card: an optional scene + question + three A/B/C answers.
+///
+/// Scene-based modules (e.g. MPDM lights & shapes) populate [elements];
+/// text-only modules (e.g. rescue knowledge) leave them empty.
 class QuizCard {
   final String id;
-  final CardCategory category;
+  final CardCategory? category;
   final bool isDay;
   final String question;
   final List<String> options;
@@ -32,29 +36,34 @@ class QuizCard {
 
   const QuizCard({
     required this.id,
-    required this.category,
-    required this.isDay,
+    this.category,
+    this.isDay = false,
     required this.question,
     required this.options,
     required this.correctIndex,
     required this.explanation,
-    required this.elements,
+    this.elements = const <SceneElement>[],
   });
 
   String get correctText => options[correctIndex];
 
+  /// Whether this card carries a drawable scene.
+  bool get hasScene => elements.isNotEmpty;
+
   factory QuizCard.fromJson(Map<String, dynamic> json) {
+    final rawCategory = json['category'] as String?;
     return QuizCard(
       id: json['id'] as String,
-      category: CardCategory.fromJson(json['category'] as String),
-      isDay: json['isDay'] as bool,
+      category: rawCategory != null ? CardCategory.fromJson(rawCategory) : null,
+      isDay: json['isDay'] as bool? ?? false,
       question: json['question'] as String,
       options: (json['options'] as List).map((e) => e as String).toList(),
       correctIndex: json['correctIndex'] as int,
       explanation: json['explanation'] as String? ?? '',
-      elements: (json['elements'] as List)
-          .map((e) => SceneElement.fromJson(e as Map<String, dynamic>))
-          .toList(),
+      elements: (json['elements'] as List?)
+              ?.map((e) => SceneElement.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const <SceneElement>[],
     );
   }
 
