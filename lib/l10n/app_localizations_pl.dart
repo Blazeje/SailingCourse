@@ -13,9 +13,6 @@ class AppLocalizationsPl extends AppLocalizations {
   String get appTitle => 'Kurs żeglarski';
 
   @override
-  String get comingSoon => 'Wkrótce';
-
-  @override
   String get cancel => 'Anuluj';
 
   @override
@@ -26,10 +23,11 @@ class AppLocalizationsPl extends AppLocalizations {
       'Międzynarodowe Prawo Drogi Morskiej (Prawidła 20–31)';
 
   @override
-  String get moduleKnotsTitle => 'Węzły żeglarskie';
+  String get moduleNavigationTitle => 'Nawigacja';
 
   @override
-  String get moduleNavigationTitle => 'Nawigacja';
+  String get moduleNavigationSubtitle =>
+      'Poprawki kompasu, namiary i pozycja, zliczanie drogi, prąd i znos';
 
   @override
   String get moduleRescueTitle => 'Ratownictwo';

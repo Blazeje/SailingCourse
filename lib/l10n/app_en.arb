@@ -5,13 +5,12 @@
   "@appTitle": {
     "description": "Application name shown in the OS and home app bar."
   },
-  "comingSoon": "Coming soon",
   "cancel": "Cancel",
 
   "moduleMpdmTitle": "MPDM – Lights & shapes",
   "moduleMpdmSubtitle": "International Regulations for Preventing Collisions at Sea (Rules 20–31)",
-  "moduleKnotsTitle": "Sailing knots",
   "moduleNavigationTitle": "Navigation",
+  "moduleNavigationSubtitle": "Compass corrections, bearings & fixes, dead reckoning, set & drift",
   "moduleRescueTitle": "Rescue & safety",
   "@moduleRescueTitle": {
     "description": "Title of the rescue & safety module."

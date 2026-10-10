@@ -36,4 +36,9 @@ final List<CourseModule> kCourseModules = [
     assetModule: 'locja',
     title: (t) => t.moduleLocjaTitle,
   ),
+  CourseModule(
+    namespace: 'navigation',
+    assetModule: 'navigation',
+    title: (t) => t.moduleNavigationTitle,
+  ),
 ];

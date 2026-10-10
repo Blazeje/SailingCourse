@@ -7,6 +7,7 @@ import 'l10n/locale_cubit.dart';
 import 'modules/mpdm/mpdm_module.dart';
 import 'modules/rescue/rescue_module.dart';
 import 'modules/locja/locja_module.dart';
+import 'modules/navigation/navigation_module.dart';
 import 'shared/stats/global_stats_screen.dart';
 
 void main() {
@@ -105,16 +106,12 @@ class CourseHomeScreen extends StatelessWidget {
             ),
           ),
           _ModuleCard(
-            icon: Icons.anchor,
-            title: t.moduleKnotsTitle,
-            subtitle: t.comingSoon,
-            enabled: false,
-          ),
-          _ModuleCard(
             icon: Icons.map,
             title: t.moduleNavigationTitle,
-            subtitle: t.comingSoon,
-            enabled: false,
+            subtitle: t.moduleNavigationSubtitle,
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const NavigationModule()),
+            ),
           ),
         ],
       ),
@@ -186,14 +183,12 @@ class _ModuleCard extends StatelessWidget {
   final String title;
   final String subtitle;
   final VoidCallback? onTap;
-  final bool enabled;
 
   const _ModuleCard({
     required this.icon,
     required this.title,
     required this.subtitle,
     this.onTap,
-    this.enabled = true,
   });
 
   @override
@@ -208,11 +203,8 @@ class _ModuleCard extends StatelessWidget {
             style: const TextStyle(
                 fontSize: 18, fontWeight: FontWeight.bold)),
         subtitle: Text(subtitle),
-        trailing: enabled
-            ? const Icon(Icons.chevron_right)
-            : const Icon(Icons.lock_outline),
-        enabled: enabled,
-        onTap: enabled ? onTap : null,
+        trailing: const Icon(Icons.chevron_right),
+        onTap: onTap,
       ),
     );
   }

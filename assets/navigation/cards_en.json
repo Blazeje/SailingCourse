@@ -1,0 +1,136 @@
+{
+  "cards": [
+    {
+      "id": "nv01",
+      "question": "What is variation (magnetic declination)?",
+      "options": [
+        "The angle between true north and magnetic north at a given place",
+        "The angle between magnetic north and compass north on a particular heading",
+        "The difference between the course steered and the course made good"
+      ],
+      "correctIndex": 0,
+      "explanation": "Variation is the horizontal angle between true (geographic) north and magnetic north. It depends on location, changes slowly over time, and is printed in the chart's compass rose."
+    },
+    {
+      "id": "nv02",
+      "question": "What is deviation?",
+      "options": [
+        "The angle between magnetic north and compass north, caused by the vessel's own magnetism",
+        "The angle between true north and magnetic north",
+        "The sideways push of the boat caused by the wind"
+      ],
+      "correctIndex": 0,
+      "explanation": "Deviation is the magnetic compass error caused by the boat's own magnetic field (engine, steel, electronics). It changes with the vessel's heading and is listed in a deviation card."
+    },
+    {
+      "id": "nv03",
+      "question": "Your compass heading is 100°, deviation 2°E and variation 4°E. What is the true heading?",
+      "options": [
+        "106°",
+        "094°",
+        "098°"
+      ],
+      "correctIndex": 0,
+      "explanation": "Easterly errors are added when converting compass to true ('error east, compass least'): 100° + 2° + 4° = 106°."
+    },
+    {
+      "id": "nv04",
+      "question": "A magnetic bearing is 215° and the variation is 6°W. What is the true bearing?",
+      "options": [
+        "209°",
+        "221°",
+        "215°"
+      ],
+      "correctIndex": 0,
+      "explanation": "When converting magnetic to true, westerly variation is subtracted: 215° − 6° = 209°. (An easterly variation would be added.)"
+    },
+    {
+      "id": "nv05",
+      "question": "You take compass bearings of two charted objects at the same time. What do the two plotted position lines give you?",
+      "options": [
+        "A fix — your position is where the two position lines cross",
+        "Only an estimated position, because bearings ignore the tide",
+        "The course to steer to the nearest object"
+      ],
+      "correctIndex": 0,
+      "explanation": "Two (preferably three) simultaneous bearings of charted objects plot as position lines; their intersection is a fix. A good cut has the lines crossing near 90°."
+    },
+    {
+      "id": "nv06",
+      "question": "Two charted objects are seen exactly in line (a transit). What is this most useful for?",
+      "options": [
+        "A very accurate position line, and a check of the compass error",
+        "Measuring the rate of the tidal stream",
+        "Finding the depth of water under the keel"
+      ],
+      "correctIndex": 0,
+      "explanation": "When two objects are in transit (in line) you are on the line joining them — an extremely accurate position line that needs no compass. Comparing its true bearing with the compass bearing also reveals compass error."
+    },
+    {
+      "id": "nv07",
+      "question": "Only one charted object is visible. How can you still obtain a fix?",
+      "options": [
+        "Take a bearing, run on a known course and distance, then take a second bearing and transfer the first (a running fix)",
+        "Take the same bearing twice from the same spot",
+        "You cannot — a fix always needs two objects"
+      ],
+      "correctIndex": 0,
+      "explanation": "A running fix uses one object: a bearing, then after a measured run (course and distance) a second bearing. The first position line is transferred along the run; the transferred line and the second bearing cross at the fix."
+    },
+    {
+      "id": "nv08",
+      "question": "What is a dead reckoning (DR) position?",
+      "options": [
+        "A position from course steered and distance run only, with no allowance for tide or leeway",
+        "A position found from two or more bearings",
+        "A position that already includes the effect of tidal stream and leeway"
+      ],
+      "correctIndex": 0,
+      "explanation": "A DR position uses only course steered and distance run from a known position. Adding the estimated tidal stream (set and drift) and leeway turns it into an estimated position (EP)."
+    },
+    {
+      "id": "nv09",
+      "question": "In tidal calculations, what do 'set' and 'drift' mean?",
+      "options": [
+        "Set is the direction the tidal stream flows towards; drift is its rate (distance over the period)",
+        "Set is the stream's speed; drift is the direction it comes from",
+        "Set is the leeway angle; drift is the boat's speed through the water"
+      ],
+      "correctIndex": 0,
+      "explanation": "Set is the direction towards which the tidal stream flows; drift is how far it would carry you over the period. They are applied to the water track to find the ground track."
+    },
+    {
+      "id": "nv10",
+      "question": "What is leeway?",
+      "options": [
+        "The angle a boat is pushed downwind of its heading by the wind",
+        "The difference between true and magnetic north",
+        "The distance run through the water in one hour"
+      ],
+      "correctIndex": 0,
+      "explanation": "Leeway is the sideways, downwind displacement caused by wind. It offsets the water track to the downwind side and must be allowed for when working up an estimated position or a course to steer."
+    },
+    {
+      "id": "nv11",
+      "question": "At 6 knots, how far do you travel in 90 minutes?",
+      "options": [
+        "9 nautical miles",
+        "6 nautical miles",
+        "4 nautical miles"
+      ],
+      "correctIndex": 0,
+      "explanation": "Distance = speed × time = 6 kn × 1.5 h = 9 NM. A knot is one nautical mile per hour."
+    },
+    {
+      "id": "nv12",
+      "question": "You cover 12 nautical miles in 2 hours. What is your speed over the ground?",
+      "options": [
+        "6 knots",
+        "12 knots",
+        "24 knots"
+      ],
+      "correctIndex": 0,
+      "explanation": "Speed = distance ÷ time = 12 NM ÷ 2 h = 6 knots."
+    }
+  ]
+}

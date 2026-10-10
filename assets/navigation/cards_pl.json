@@ -1,0 +1,136 @@
+{
+  "cards": [
+    {
+      "id": "nv01",
+      "question": "Czym jest deklinacja magnetyczna (wariacja)?",
+      "options": [
+        "Kątem między północą rzeczywistą a północą magnetyczną w danym miejscu",
+        "Kątem między północą magnetyczną a północą kompasową na danym kursie",
+        "Różnicą między kursem sterowanym a kursem rzeczywistym nad dnem"
+      ],
+      "correctIndex": 0,
+      "explanation": "Deklinacja (wariacja) to poziomy kąt między północą rzeczywistą (geograficzną) a magnetyczną. Zależy od miejsca, zmienia się powoli w czasie i jest podana w róży kompasowej na mapie."
+    },
+    {
+      "id": "nv02",
+      "question": "Czym jest dewiacja?",
+      "options": [
+        "Kątem między północą magnetyczną a północą kompasową, wywołanym własnym magnetyzmem jednostki",
+        "Kątem między północą rzeczywistą a magnetyczną",
+        "Bocznym znoszeniem jednostki przez wiatr"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dewiacja to błąd kompasu magnetycznego wywołany własnym polem magnetycznym jednostki (silnik, stal, elektronika). Zmienia się wraz z kursem i jest podana w tabeli dewiacji."
+    },
+    {
+      "id": "nv03",
+      "question": "Twój kurs kompasowy to 100°, dewiacja 2°E, a deklinacja 4°E. Jaki jest kurs rzeczywisty?",
+      "options": [
+        "106°",
+        "094°",
+        "098°"
+      ],
+      "correctIndex": 0,
+      "explanation": "Błędy wschodnie (E) dodajemy przy zamianie z kompasowego na rzeczywisty: 100° + 2° + 4° = 106°."
+    },
+    {
+      "id": "nv04",
+      "question": "Namiar magnetyczny wynosi 215°, a deklinacja 6°W. Jaki jest namiar rzeczywisty?",
+      "options": [
+        "209°",
+        "221°",
+        "215°"
+      ],
+      "correctIndex": 0,
+      "explanation": "Przy zamianie z magnetycznego na rzeczywisty deklinację zachodnią (W) odejmujemy: 215° − 6° = 209°. (Deklinację wschodnią byśmy dodali.)"
+    },
+    {
+      "id": "nv05",
+      "question": "Jednocześnie bierzesz namiary kompasowe na dwa obiekty naniesione na mapę. Co dają dwie naniesione linie pozycyjne?",
+      "options": [
+        "Pozycję obserwowaną (fix) — jesteś tam, gdzie przecinają się linie pozycyjne",
+        "Tylko pozycję zliczoną, bo namiary pomijają prąd",
+        "Kurs do sterowania na najbliższy obiekt"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dwa (najlepiej trzy) jednoczesne namiary na obiekty z mapy nanosi się jako linie pozycyjne; ich przecięcie to pozycja obserwowana. Dobry przekrój ma linie przecinające się blisko 90°."
+    },
+    {
+      "id": "nv06",
+      "question": "Dwa obiekty z mapy widać dokładnie w jednej linii (nabieżnik). Do czego jest to najbardziej przydatne?",
+      "options": [
+        "Do bardzo dokładnej linii pozycyjnej oraz sprawdzenia błędu kompasu",
+        "Do pomiaru prędkości prądu pływowego",
+        "Do ustalenia głębokości wody pod kilem"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gdy dwa obiekty są w nabieżniku (w jednej linii), znajdujesz się na linii je łączącej — niezwykle dokładna linia pozycyjna niewymagająca kompasu. Porównanie jej namiaru rzeczywistego z kompasowym ujawnia też błąd kompasu."
+    },
+    {
+      "id": "nv07",
+      "question": "Widoczny jest tylko jeden obiekt z mapy. Jak mimo to wyznaczyć pozycję obserwowaną?",
+      "options": [
+        "Wziąć namiar, przejść znanym kursem i dystansem, wziąć drugi namiar i przenieść pierwszą linię (pozycja z przeniesienia)",
+        "Wziąć ten sam namiar dwa razy z tego samego miejsca",
+        "Nie da się — pozycja zawsze wymaga dwóch obiektów"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pozycja z przeniesienia (running fix) wykorzystuje jeden obiekt: namiar, po zmierzonym przebiegu (kurs i dystans) drugi namiar. Pierwszą linię pozycyjną przenosi się o przebytą drogę; przeniesiona linia i drugi namiar przecinają się w pozycji obserwowanej."
+    },
+    {
+      "id": "nv08",
+      "question": "Czym jest pozycja zliczona (DR)?",
+      "options": [
+        "Pozycją z samego kursu sterowanego i przebytego dystansu, bez uwzględnienia prądu i znosu",
+        "Pozycją wyznaczoną z dwóch lub więcej namiarów",
+        "Pozycją uwzględniającą już prąd pływowy i znos wiatrowy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pozycja zliczona (DR) wykorzystuje tylko kurs sterowany i przebyty dystans od znanej pozycji. Dodanie szacowanego prądu pływowego (kierunek i prędkość) oraz znosu daje pozycję zliczoną uściśloną (EP)."
+    },
+    {
+      "id": "nv09",
+      "question": "W obliczeniach pływowych, co oznaczają 'kierunek' i 'prędkość' prądu pływowego?",
+      "options": [
+        "Kierunek to strona, w którą płynie prąd; prędkość (drift) to droga, jaką przeniesie w danym czasie",
+        "Kierunek to prędkość prądu; drift to strona, z której nadpływa",
+        "Kierunek to kąt znosu; drift to prędkość jednostki względem wody"
+      ],
+      "correctIndex": 0,
+      "explanation": "Kierunek prądu (set) to strona, w którą płynie prąd pływowy; prędkość (drift) to dystans, o jaki przeniesie w danym okresie. Nanosi się je na drogę względem wody, aby uzyskać drogę nad dnem."
+    },
+    {
+      "id": "nv10",
+      "question": "Czym jest znos wiatrowy (leeway)?",
+      "options": [
+        "Kątem, o jaki wiatr spycha jednostkę pod wiatr od jej kursu",
+        "Różnicą między północą rzeczywistą a magnetyczną",
+        "Dystansem przebytym względem wody w ciągu godziny"
+      ],
+      "correctIndex": 0,
+      "explanation": "Znos wiatrowy to boczne przemieszczenie z wiatrem wywołane przez wiatr. Przesuwa drogę względem wody na stronę zawietrzną i trzeba go uwzględnić przy wyznaczaniu pozycji zliczonej uściślonej lub kursu do sterowania."
+    },
+    {
+      "id": "nv11",
+      "question": "Przy prędkości 6 węzłów, jaki dystans pokonasz w 90 minut?",
+      "options": [
+        "9 mil morskich",
+        "6 mil morskich",
+        "4 mile morskie"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dystans = prędkość × czas = 6 w × 1,5 h = 9 Mm. Węzeł to jedna mila morska na godzinę."
+    },
+    {
+      "id": "nv12",
+      "question": "Pokonujesz 12 mil morskich w 2 godziny. Jaka jest Twoja prędkość nad dnem?",
+      "options": [
+        "6 węzłów",
+        "12 węzłów",
+        "24 węzły"
+      ],
+      "correctIndex": 0,
+      "explanation": "Prędkość = dystans ÷ czas = 12 Mm ÷ 2 h = 6 węzłów."
+    }
+  ]
+}

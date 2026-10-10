@@ -104,12 +104,6 @@ abstract class AppLocalizations {
   /// **'Sailing Course'**
   String get appTitle;
 
-  /// No description provided for @comingSoon.
-  ///
-  /// In en, this message translates to:
-  /// **'Coming soon'**
-  String get comingSoon;
-
   /// No description provided for @cancel.
   ///
   /// In en, this message translates to:
@@ -128,17 +122,17 @@ abstract class AppLocalizations {
   /// **'International Regulations for Preventing Collisions at Sea (Rules 20–31)'**
   String get moduleMpdmSubtitle;
 
-  /// No description provided for @moduleKnotsTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Sailing knots'**
-  String get moduleKnotsTitle;
-
   /// No description provided for @moduleNavigationTitle.
   ///
   /// In en, this message translates to:
   /// **'Navigation'**
   String get moduleNavigationTitle;
+
+  /// No description provided for @moduleNavigationSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Compass corrections, bearings & fixes, dead reckoning, set & drift'**
+  String get moduleNavigationSubtitle;
 
   /// Title of the rescue & safety module.
   ///

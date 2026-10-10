@@ -13,9 +13,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get appTitle => 'Sailing Course';
 
   @override
-  String get comingSoon => 'Coming soon';
-
-  @override
   String get cancel => 'Cancel';
 
   @override
@@ -26,10 +23,11 @@ class AppLocalizationsEn extends AppLocalizations {
       'International Regulations for Preventing Collisions at Sea (Rules 20–31)';
 
   @override
-  String get moduleKnotsTitle => 'Sailing knots';
+  String get moduleNavigationTitle => 'Navigation';
 
   @override
-  String get moduleNavigationTitle => 'Navigation';
+  String get moduleNavigationSubtitle =>
+      'Compass corrections, bearings & fixes, dead reckoning, set & drift';
 
   @override
   String get moduleRescueTitle => 'Rescue & safety';

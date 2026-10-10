@@ -2,13 +2,12 @@
   "@@locale": "pl",
 
   "appTitle": "Kurs żeglarski",
-  "comingSoon": "Wkrótce",
   "cancel": "Anuluj",
 
   "moduleMpdmTitle": "MPDM – Światła i znaki",
   "moduleMpdmSubtitle": "Międzynarodowe Prawo Drogi Morskiej (Prawidła 20–31)",
-  "moduleKnotsTitle": "Węzły żeglarskie",
   "moduleNavigationTitle": "Nawigacja",
+  "moduleNavigationSubtitle": "Poprawki kompasu, namiary i pozycja, zliczanie drogi, prąd i znos",
   "moduleRescueTitle": "Ratownictwo",
   "moduleRescueSubtitle": "SART, ewakuacja helikopterem, MOB, tratwa, sygnały wzywania pomocy",
   "moduleLocjaTitle": "Locja",
