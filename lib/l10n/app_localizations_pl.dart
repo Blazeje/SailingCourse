@@ -39,6 +39,13 @@ class AppLocalizationsPl extends AppLocalizations {
       'SART, ewakuacja helikopterem, MOB, tratwa, sygnały wzywania pomocy';
 
   @override
+  String get moduleLocjaTitle => 'Locja';
+
+  @override
+  String get moduleLocjaSubtitle =>
+      'Oznakowanie IALA, znaki kardynalne, światła, symbole mapowe, pływy';
+
+  @override
   String get chooseLearnScope => 'Wybierz zakres nauki';
 
   @override

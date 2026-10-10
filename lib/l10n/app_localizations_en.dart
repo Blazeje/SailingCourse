@@ -39,6 +39,13 @@ class AppLocalizationsEn extends AppLocalizations {
       'SART, helicopter rescue, MOB, liferaft, distress signals';
 
   @override
+  String get moduleLocjaTitle => 'Pilotage & marks';
+
+  @override
+  String get moduleLocjaSubtitle =>
+      'IALA buoyage, cardinal marks, lights, chart symbols, tides';
+
+  @override
   String get chooseLearnScope => 'Choose a study scope';
 
   @override

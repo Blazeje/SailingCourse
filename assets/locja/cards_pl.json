@@ -1,0 +1,167 @@
+{
+  "cards": [
+    {
+      "id": "l01",
+      "scene": "lateral_port",
+      "question": "W regionie IALA A widzisz tę czerwoną, cylindryczną pławę. Jak ją traktujesz?",
+      "options": [
+        "Mijasz ją lewą burtą (po lewej stronie), wchodząc do portu od strony morza",
+        "Mijasz ją prawą burtą (po prawej stronie), wchodząc od strony morza",
+        "Oznacza odosobnione niebezpieczeństwo, więc omijasz ją z dala z obu stron"
+      ],
+      "correctIndex": 0,
+      "explanation": "W regionie IALA A znaki lewej strony toru są czerwone i cylindryczne. Wchodząc do portu od strony morza zostawiasz je po lewej burcie."
+    },
+    {
+      "id": "l02",
+      "scene": "lateral_starboard",
+      "question": "W regionie IALA A widzisz tę zieloną, stożkową pławę. Jak ją traktujesz?",
+      "options": [
+        "Mijasz ją prawą burtą (po prawej stronie), wchodząc do portu od strony morza",
+        "Mijasz ją lewą burtą (po lewej stronie), wchodząc od strony morza",
+        "Oznacza wodę bezpieczną, więc możesz ją minąć dowolnie"
+      ],
+      "correctIndex": 0,
+      "explanation": "W regionie IALA A znaki prawej strony toru są zielone i stożkowe. Wchodząc do portu od strony morza zostawiasz je po prawej burcie."
+    },
+    {
+      "id": "l03",
+      "scene": "cardinal_north",
+      "question": "Ten znak jest czarny nad żółtym, a dwa stożki znaku szczytowego są skierowane w górę. Z której strony należy go minąć?",
+      "options": [
+        "Minąć od strony północnej znaku (woda bezpieczna jest na północy)",
+        "Minąć od strony południowej znaku",
+        "Minąć wyłącznie od strony wschodniej znaku"
+      ],
+      "correctIndex": 0,
+      "explanation": "Znak kardynalny północny jest czarny nad żółtym, a oba stożki znaku szczytowego są skierowane w górę. Woda bezpieczna leży na północy, więc mijasz go od północy."
+    },
+    {
+      "id": "l04",
+      "scene": "cardinal_east",
+      "question": "Ten znak jest czarno-żółto-czarny, a stożki znaku szczytowego stykają się podstawami. Gdzie jest woda bezpieczna?",
+      "options": [
+        "Na wschód od znaku, więc mijasz go od wschodu",
+        "Na zachód od znaku",
+        "Na południe od znaku"
+      ],
+      "correctIndex": 0,
+      "explanation": "Znak kardynalny wschodni jest czarno-żółto-czarny, a jego dwa stożki stykają się podstawami (kształt jaja). Woda bezpieczna leży na wschodzie."
+    },
+    {
+      "id": "l05",
+      "scene": "cardinal_south",
+      "question": "Ten znak jest żółty nad czarnym, a dwa stożki znaku szczytowego są skierowane w dół. Z której strony należy go minąć?",
+      "options": [
+        "Minąć od strony południowej znaku",
+        "Minąć od strony północnej znaku",
+        "Minąć od strony zachodniej znaku"
+      ],
+      "correctIndex": 0,
+      "explanation": "Znak kardynalny południowy jest żółty nad czarnym, a oba stożki znaku szczytowego są skierowane w dół. Woda bezpieczna leży na południu."
+    },
+    {
+      "id": "l06",
+      "scene": "cardinal_west",
+      "question": "Ten znak jest żółto-czarno-żółty, a stożki znaku szczytowego stykają się wierzchołkami. Z której strony należy go minąć?",
+      "options": [
+        "Minąć od strony zachodniej znaku",
+        "Minąć od strony wschodniej znaku",
+        "Minąć od strony północnej znaku"
+      ],
+      "correctIndex": 0,
+      "explanation": "Znak kardynalny zachodni jest żółto-czarno-żółty, a jego dwa stożki stykają się wierzchołkami (kształt kieliszka). Woda bezpieczna leży na zachodzie."
+    },
+    {
+      "id": "l07",
+      "scene": "isolated_danger",
+      "question": "Czarna pława z czerwonymi poziomymi pasami i znakiem szczytowym w postaci dwóch czarnych kul oznacza co?",
+      "options": [
+        "Odosobnione niebezpieczeństwo, wokół którego jest woda żeglowna",
+        "Lewą stronę toru wodnego",
+        "Obszar specjalny, taki jak mila pomiarowa"
+      ],
+      "correctIndex": 0,
+      "explanation": "Znak odosobnionego niebezpieczeństwa jest czarny z jednym lub kilkoma czerwonymi poziomymi pasami i ma znak szczytowy w postaci dwóch czarnych kul. Stoi na lub przy małym niebezpieczeństwie otoczonym wodą żeglowną."
+    },
+    {
+      "id": "l08",
+      "scene": "safe_water",
+      "question": "Pława w czerwono-białe pionowe pasy z pojedynczą czerwoną kulą jako znakiem szczytowym oznacza co?",
+      "options": [
+        "Wodę bezpieczną dookoła, np. znak nawigacyjny podejściowy lub osi toru",
+        "Odosobnione niebezpieczeństwo, więc trzymaj się z dala",
+        "Prawą stronę toru wodnego"
+      ],
+      "correctIndex": 0,
+      "explanation": "Znak wody bezpiecznej ma czerwono-białe pionowe pasy i pojedynczą czerwoną kulę jako znak szczytowy. Oznacza wodę żeglowną dookoła, np. pławę osi toru lub podejściową."
+    },
+    {
+      "id": "l09",
+      "scene": "special_mark",
+      "question": "Żółta pława z żółtym znakiem szczytowym w kształcie litery 'X' (krzyża św. Andrzeja) oznacza co?",
+      "options": [
+        "Obszar lub obiekt specjalny, który nie jest głównie niebezpieczeństwem nawigacyjnym (np. kabel, klapowisko lub znak regatowy)",
+        "Północną stronę niebezpieczeństwa",
+        "Lewą stronę toru przy wejściu od strony morza"
+      ],
+      "correctIndex": 0,
+      "explanation": "Znaki specjalne są żółte z żółtym znakiem szczytowym w kształcie X. Oznaczają obszar lub obiekt specjalny (kable, klapowiska, strefy wojskowe lub rekreacyjne), a nie główne niebezpieczeństwo nawigacyjne."
+    },
+    {
+      "id": "l10",
+      "question": "Na mapie światło oznaczone jest jako 'Fl'. Co oznacza ta charakterystyka?",
+      "options": [
+        "Błyskowe: okres światła jest krótszy niż okres ciemności",
+        "Stałe: ciągłe, równomierne światło",
+        "Przerywane (Oc): okres światła jest dłuższy niż ciemności"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Fl' oznacza światło błyskowe: błysk pokazywany w regularnych odstępach, w którym łączny czas trwania światła jest krótszy niż ciemności."
+    },
+    {
+      "id": "l11",
+      "question": "Co pokazuje światło 'Iso' (izofazowe)?",
+      "options": [
+        "Równe okresy światła i ciemności",
+        "Światło, które nigdy nie gaśnie (stałe)",
+        "Szybki błysk, 50 do 60 błysków na minutę"
+      ],
+      "correctIndex": 0,
+      "explanation": "Światło izofazowe ('Iso') ma równy czas trwania światła i ciemności. Porównaj z 'Oc' (przerywane), gdzie światło jest dłuższe niż ciemność, oraz 'Fl', gdzie światło jest krótsze."
+    },
+    {
+      "id": "l12",
+      "question": "Do czego na mapie morskiej odnosi się głębokość mapowa (sonda)?",
+      "options": [
+        "Do głębokości poniżej poziomu odniesienia mapy, zwykle bliskiego najniższej wody astronomicznej (LAT)",
+        "Do głębokości przy średniej wysokiej wodzie syzygijnej",
+        "Do wysokości dna morskiego nad lądem"
+      ],
+      "correctIndex": 0,
+      "explanation": "Głębokości mapowe (sondy) mierzone są poniżej poziomu odniesienia mapy, który zwykle jest bliski najniższej wody astronomicznej (LAT). Rzeczywista głębokość = głębokość mapowa + wysokość pływu."
+    },
+    {
+      "id": "l13",
+      "question": "Co na mapie oznacza 'wysokość osuszania' (liczba podkreślona)?",
+      "options": [
+        "Jak wysoko obiekt wynurza się nad poziom odniesienia mapy; jest odsłonięty przy niskiej wodzie",
+        "Prześwit pod mostem przy wysokiej wodzie",
+        "Głębokość wody przy średnim poziomie morza"
+      ],
+      "correctIndex": 0,
+      "explanation": "Podkreślona sonda to wysokość osuszania: jak wysoko obiekt (np. łacha piaskowa) wznosi się nad poziom odniesienia mapy. Jest odsłonięty przy niskiej wodzie i zakrywany, gdy pływ rośnie."
+    },
+    {
+      "id": "l14",
+      "question": "Kiedy występują pływy syzygijne (największa amplituda pływu)?",
+      "options": [
+        "Około nowiu i pełni księżyca, gdy Słońce i Księżyc są w jednej linii",
+        "Około pierwszej i ostatniej kwadry księżyca",
+        "Tylko raz w roku, w czasie równonocy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pływy syzygijne występują blisko nowiu i pełni, gdy Słońce i Księżyc działają w jednej linii (najwyższe przypływy i najniższe odpływy). Pływy kwadraturowe, o najmniejszej amplitudzie, występują około kwadr księżyca."
+    }
+  ]
+}

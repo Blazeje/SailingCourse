@@ -1,0 +1,167 @@
+{
+  "cards": [
+    {
+      "id": "l01",
+      "scene": "lateral_port",
+      "question": "In IALA Region A you see this red, can-shaped buoy. How do you treat it?",
+      "options": [
+        "Keep it on your port (left) side when entering harbour from seaward",
+        "Keep it on your starboard (right) side when entering from seaward",
+        "It marks an isolated danger, so pass well clear on either side"
+      ],
+      "correctIndex": 0,
+      "explanation": "In IALA Region A, port-hand marks are red and can-shaped. When entering harbour from seaward you leave them on your port (left) side."
+    },
+    {
+      "id": "l02",
+      "scene": "lateral_starboard",
+      "question": "In IALA Region A you see this green, conical buoy. How do you treat it?",
+      "options": [
+        "Keep it on your starboard (right) side when entering harbour from seaward",
+        "Keep it on your port (left) side when entering from seaward",
+        "It marks safe water, so you may pass over it"
+      ],
+      "correctIndex": 0,
+      "explanation": "In IALA Region A, starboard-hand marks are green and cone-shaped. Entering harbour from seaward you leave them on your starboard (right) side."
+    },
+    {
+      "id": "l03",
+      "scene": "cardinal_north",
+      "question": "This mark is black above yellow with two topmark cones pointing up. On which side should you pass?",
+      "options": [
+        "Pass to the north of the mark (safe water lies to the north)",
+        "Pass to the south of the mark",
+        "Pass only to the east of the mark"
+      ],
+      "correctIndex": 0,
+      "explanation": "A north cardinal mark is black above yellow with both topmark cones pointing up. Safe water lies to the north, so you pass north of it."
+    },
+    {
+      "id": "l04",
+      "scene": "cardinal_east",
+      "question": "This mark is black-yellow-black with its topmark cones base to base. Where is the safe water?",
+      "options": [
+        "To the east of the mark, so pass to the east",
+        "To the west of the mark",
+        "To the south of the mark"
+      ],
+      "correctIndex": 0,
+      "explanation": "An east cardinal mark is black-yellow-black and its two topmark cones are base to base (egg-shaped). Safe water lies to the east."
+    },
+    {
+      "id": "l05",
+      "scene": "cardinal_south",
+      "question": "This mark is yellow above black with two topmark cones pointing down. On which side should you pass?",
+      "options": [
+        "Pass to the south of the mark",
+        "Pass to the north of the mark",
+        "Pass to the west of the mark"
+      ],
+      "correctIndex": 0,
+      "explanation": "A south cardinal mark is yellow above black with both topmark cones pointing down. Safe water lies to the south."
+    },
+    {
+      "id": "l06",
+      "scene": "cardinal_west",
+      "question": "This mark is yellow-black-yellow with its topmark cones point to point. Where should you pass?",
+      "options": [
+        "Pass to the west of the mark",
+        "Pass to the east of the mark",
+        "Pass to the north of the mark"
+      ],
+      "correctIndex": 0,
+      "explanation": "A west cardinal mark is yellow-black-yellow and its two topmark cones are point to point (wineglass-shaped). Safe water lies to the west."
+    },
+    {
+      "id": "l07",
+      "scene": "isolated_danger",
+      "question": "A black buoy with red horizontal bands and a topmark of two black balls marks what?",
+      "options": [
+        "An isolated danger with navigable water all around it",
+        "The port side of a channel",
+        "A special area such as a measured mile"
+      ],
+      "correctIndex": 0,
+      "explanation": "An isolated danger mark is black with one or more red horizontal bands and carries a topmark of two black balls. It stands on or near a small danger that has navigable water all around."
+    },
+    {
+      "id": "l08",
+      "scene": "safe_water",
+      "question": "A buoy with red and white vertical stripes and a single red spherical topmark indicates what?",
+      "options": [
+        "Safe water all around, e.g. a landfall or mid-channel mark",
+        "An isolated danger, so keep well clear",
+        "The starboard side of the channel"
+      ],
+      "correctIndex": 0,
+      "explanation": "A safe-water mark has red and white vertical stripes and a single red spherical topmark. It indicates navigable water all around, such as a mid-channel or landfall buoy."
+    },
+    {
+      "id": "l09",
+      "scene": "special_mark",
+      "question": "A yellow buoy with a yellow 'X' (St Andrew's cross) topmark marks what?",
+      "options": [
+        "A special area or feature that is not primarily a navigational danger (e.g. a cable, spoil ground or racing mark)",
+        "The north side of a danger",
+        "The port side of the channel when entering from seaward"
+      ],
+      "correctIndex": 0,
+      "explanation": "Special marks are yellow with a yellow X-shaped topmark. They indicate a special area or feature (cables, spoil grounds, military or recreation zones) rather than a primary navigational danger."
+    },
+    {
+      "id": "l10",
+      "question": "On a chart a light is shown as 'Fl'. What does this characteristic mean?",
+      "options": [
+        "Flashing: the period of light is shorter than the period of darkness",
+        "Fixed: a continuous, steady light",
+        "Occulting: the period of light is longer than the darkness"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Fl' means a flashing light: a flash shown at regular intervals where the total duration of light is shorter than the darkness."
+    },
+    {
+      "id": "l11",
+      "question": "What does an 'Iso' (isophase) light show?",
+      "options": [
+        "Equal periods of light and darkness",
+        "A light that never goes out (fixed)",
+        "A quick flash of 50 to 60 flashes per minute"
+      ],
+      "correctIndex": 0,
+      "explanation": "An isophase ('Iso') light has equal durations of light and darkness. Compare with 'Oc' (occulting), where light is longer than dark, and 'Fl', where light is shorter."
+    },
+    {
+      "id": "l12",
+      "question": "On a nautical chart, what does a charted depth (a sounding) refer to?",
+      "options": [
+        "The depth below chart datum, usually close to Lowest Astronomical Tide (LAT)",
+        "The depth at mean high water springs",
+        "The height of the sea bed above the land"
+      ],
+      "correctIndex": 0,
+      "explanation": "Charted depths (soundings) are measured below chart datum, which is normally near Lowest Astronomical Tide (LAT). Actual depth = charted depth + height of tide."
+    },
+    {
+      "id": "l13",
+      "question": "On a chart, what is a 'drying height' (an underlined figure) telling you?",
+      "options": [
+        "How far the feature dries above chart datum; it is uncovered at low water",
+        "The clearance under a bridge at high water",
+        "The depth of water at mean sea level"
+      ],
+      "correctIndex": 0,
+      "explanation": "An underlined sounding is a drying height: how far the feature (e.g. a sandbank) rises above chart datum. It is exposed at low water and covered as the tide rises."
+    },
+    {
+      "id": "l14",
+      "question": "When do spring tides (the largest tidal range) occur?",
+      "options": [
+        "Around new and full moon, when the sun and moon are in line",
+        "Around the first and last quarter of the moon",
+        "Only once a year, at the equinox"
+      ],
+      "correctIndex": 0,
+      "explanation": "Spring tides occur near new and full moon, when the sun and moon pull in line (highest highs and lowest lows). Neap tides, with the smallest range, occur around the quarter moons."
+    }
+  ]
+}

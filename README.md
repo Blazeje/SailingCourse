@@ -8,6 +8,9 @@ share a common quiz engine:
   scenes drawn on the fly).
 - **Rescue & safety** – text-only knowledge questions (SART, helicopter
   rescue, man overboard, liferaft, lifejackets, distress signals, first aid).
+- **Pilotage (Locja)** – IALA Region A buoyage and navigation marks drawn on
+  the fly (lateral, cardinal, isolated danger, safe water, special marks) plus
+  text questions on lights, chart symbols and tides.
 
 > **MPDM** = *Międzynarodowe Prawo Drogi Morskiej* (International Regulations
 > for Preventing Collisions at Sea).
@@ -60,15 +63,21 @@ lib/
 └── modules/
     ├── mpdm/                 # Lights & shapes: HomeBloc, StatsBloc, screens
     │   └── mpdm_module.dart  # Self-initializing module entry point
-    └── rescue/               # Rescue & safety: learn + exam, text-only cards
-        └── rescue_module.dart
+    ├── rescue/               # Rescue & safety: learn + exam, text-only cards
+    │   └── rescue_module.dart
+    └── locja/                # Pilotage: learn + exam, IALA marks drawn via MarkPainter
+        ├── locja_module.dart
+        └── painters/         # MarkPainter (IALA Region A marks)
 assets/
 ├── mpdm/   cards_pl.json / cards_en.json   # 30 cards (lights + shapes)
-└── rescue/ cards_pl.json / cards_en.json   # 12 cards (knowledge questions)
+├── rescue/ cards_pl.json / cards_en.json   # 12 cards (knowledge questions)
+└── locja/  cards_pl.json / cards_en.json   # 14 cards (marks + pilotage)
 ```
 
 The MPDM deck contains **30 cards**: 19 night/lights (`n01`–`n19`) and 11
 day/shapes (`d01`–`d11`). The rescue deck contains **12 cards** (`r01`–`r12`).
+The pilotage deck contains **14 cards** (`l01`–`l14`), 9 of them with a drawn
+IALA mark.
 
 ## Getting started
 

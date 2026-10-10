@@ -11,6 +11,8 @@
   "moduleNavigationTitle": "Nawigacja",
   "moduleRescueTitle": "Ratownictwo",
   "moduleRescueSubtitle": "SART, ewakuacja helikopterem, MOB, tratwa, sygnały wzywania pomocy",
+  "moduleLocjaTitle": "Locja",
+  "moduleLocjaSubtitle": "Oznakowanie IALA, znaki kardynalne, światła, symbole mapowe, pływy",
 
   "chooseLearnScope": "Wybierz zakres nauki",
   "scopeAll": "Wszystko ({count})",

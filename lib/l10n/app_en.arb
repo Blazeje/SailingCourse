@@ -20,6 +20,14 @@
   "@moduleRescueSubtitle": {
     "description": "Subtitle of the rescue & safety module."
   },
+  "moduleLocjaTitle": "Pilotage & marks",
+  "@moduleLocjaTitle": {
+    "description": "Title of the pilotage (Locja) module."
+  },
+  "moduleLocjaSubtitle": "IALA buoyage, cardinal marks, lights, chart symbols, tides",
+  "@moduleLocjaSubtitle": {
+    "description": "Subtitle of the pilotage (Locja) module."
+  },
 
   "chooseLearnScope": "Choose a study scope",
   "scopeAll": "Everything ({count})",

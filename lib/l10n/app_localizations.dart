@@ -152,6 +152,18 @@ abstract class AppLocalizations {
   /// **'SART, helicopter rescue, MOB, liferaft, distress signals'**
   String get moduleRescueSubtitle;
 
+  /// Title of the pilotage (Locja) module.
+  ///
+  /// In en, this message translates to:
+  /// **'Pilotage & marks'**
+  String get moduleLocjaTitle;
+
+  /// Subtitle of the pilotage (Locja) module.
+  ///
+  /// In en, this message translates to:
+  /// **'IALA buoyage, cardinal marks, lights, chart symbols, tides'**
+  String get moduleLocjaSubtitle;
+
   /// No description provided for @chooseLearnScope.
   ///
   /// In en, this message translates to:

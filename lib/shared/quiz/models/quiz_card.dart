@@ -34,6 +34,10 @@ class QuizCard {
   final String explanation;
   final List<SceneElement> elements;
 
+  /// Optional named scene for modules that draw a canonical figure instead of
+  /// free-form [elements] (e.g. an IALA mark id like `cardinal_north`).
+  final String? scene;
+
   const QuizCard({
     required this.id,
     this.category,
@@ -43,12 +47,13 @@ class QuizCard {
     required this.correctIndex,
     required this.explanation,
     this.elements = const <SceneElement>[],
+    this.scene,
   });
 
   String get correctText => options[correctIndex];
 
   /// Whether this card carries a drawable scene.
-  bool get hasScene => elements.isNotEmpty;
+  bool get hasScene => elements.isNotEmpty || scene != null;
 
   factory QuizCard.fromJson(Map<String, dynamic> json) {
     final rawCategory = json['category'] as String?;
@@ -64,6 +69,7 @@ class QuizCard {
               ?.map((e) => SceneElement.fromJson(e as Map<String, dynamic>))
               .toList() ??
           const <SceneElement>[],
+      scene: json['scene'] as String?,
     );
   }
 
@@ -80,6 +86,7 @@ class QuizCard {
       correctIndex: shuffled.indexOf(correct),
       explanation: explanation,
       elements: elements,
+      scene: scene,
     );
   }
 }

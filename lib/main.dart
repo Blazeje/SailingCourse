@@ -6,6 +6,7 @@ import 'l10n/app_localizations.dart';
 import 'l10n/locale_cubit.dart';
 import 'modules/mpdm/mpdm_module.dart';
 import 'modules/rescue/rescue_module.dart';
+import 'modules/locja/locja_module.dart';
 
 void main() {
   runApp(const SailingCourseApp());
@@ -83,6 +84,14 @@ class CourseHomeScreen extends StatelessWidget {
             subtitle: t.moduleRescueSubtitle,
             onTap: () => Navigator.of(context).push(
               MaterialPageRoute(builder: (_) => const RescueModule()),
+            ),
+          ),
+          _ModuleCard(
+            icon: Icons.explore,
+            title: t.moduleLocjaTitle,
+            subtitle: t.moduleLocjaSubtitle,
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const LocjaModule()),
             ),
           ),
           _ModuleCard(

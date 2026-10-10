@@ -14,6 +14,7 @@ class QuizScreen extends StatelessWidget {
   final List<QuizCard> deck;
   final QuizMode mode;
   final ProgressService progress;
+  final ScenePainterBuilder? sceneBuilder;
 
   const QuizScreen({
     super.key,
@@ -21,6 +22,7 @@ class QuizScreen extends StatelessWidget {
     required this.deck,
     required this.mode,
     required this.progress,
+    this.sceneBuilder,
   });
 
   @override
@@ -28,16 +30,17 @@ class QuizScreen extends StatelessWidget {
     return BlocProvider(
       create: (_) => QuizBloc(progress: progress, deck: deck, mode: mode)
         ..add(const QuizStarted()),
-      child: _QuizView(title: title),
+      child: _QuizView(title: title, sceneBuilder: sceneBuilder),
     );
   }
 }
 
 class _QuizView extends StatelessWidget {
   final String title;
+  final ScenePainterBuilder? sceneBuilder;
   static const _labels = ['A', 'B', 'C'];
 
-  const _QuizView({required this.title});
+  const _QuizView({required this.title, this.sceneBuilder});
 
   Color _buttonColor(QuizState s, int i) {
     final card = s.card;
@@ -108,7 +111,7 @@ class _QuizView extends StatelessWidget {
                   ),
                   const SizedBox(height: 12),
                   if (card.hasScene) ...[
-                    SceneView(card: card),
+                    SceneView(card: card, painterBuilder: sceneBuilder),
                     const SizedBox(height: 16),
                   ],
                   Text(

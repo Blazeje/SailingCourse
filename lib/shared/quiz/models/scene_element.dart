@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-/// Rodzaj elementu rysowanego na scenie.
+/// Kind of element drawn on the scene.
 enum ElementKind {
   light,
   ball,
@@ -24,7 +24,7 @@ enum ElementKind {
       case 'CYLINDER':
         return ElementKind.cylinder;
       default:
-        throw ArgumentError('Nieznany ElementKind: $value');
+        throw ArgumentError('Unknown ElementKind: $value');
     }
   }
 }
@@ -50,7 +50,7 @@ class Palette {
       case 'BLACK':
         return black;
       default:
-        throw ArgumentError('Nieznany kolor: $name');
+        throw ArgumentError('Unknown color: $name');
     }
   }
 }
