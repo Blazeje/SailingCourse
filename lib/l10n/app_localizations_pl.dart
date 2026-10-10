@@ -122,6 +122,12 @@ class AppLocalizationsPl extends AppLocalizations {
   String get statAccuracy => 'Łączna skuteczność';
 
   @override
+  String get statOverall => 'Łącznie';
+
+  @override
+  String get statByModule => 'Według modułu';
+
+  @override
   String accuracyValue(int percent, int correct, int total) {
     return '$percent%  ($correct/$total)';
   }

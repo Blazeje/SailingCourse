@@ -75,6 +75,8 @@
 
   "statSeen": "Seen cards",
   "statAccuracy": "Overall accuracy",
+  "statOverall": "Overall",
+  "statByModule": "By module",
   "accuracyValue": "{percent}%  ({correct}/{total})",
   "@accuracyValue": {
     "placeholders": {

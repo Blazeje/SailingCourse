@@ -122,6 +122,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get statAccuracy => 'Overall accuracy';
 
   @override
+  String get statOverall => 'Overall';
+
+  @override
+  String get statByModule => 'By module';
+
+  @override
   String accuracyValue(int percent, int correct, int total) {
     return '$percent%  ($correct/$total)';
   }

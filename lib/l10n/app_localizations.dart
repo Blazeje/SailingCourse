@@ -296,6 +296,18 @@ abstract class AppLocalizations {
   /// **'Overall accuracy'**
   String get statAccuracy;
 
+  /// No description provided for @statOverall.
+  ///
+  /// In en, this message translates to:
+  /// **'Overall'**
+  String get statOverall;
+
+  /// No description provided for @statByModule.
+  ///
+  /// In en, this message translates to:
+  /// **'By module'**
+  String get statByModule;
+
   /// No description provided for @accuracyValue.
   ///
   /// In en, this message translates to:

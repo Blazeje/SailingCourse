@@ -7,6 +7,7 @@ import 'l10n/locale_cubit.dart';
 import 'modules/mpdm/mpdm_module.dart';
 import 'modules/rescue/rescue_module.dart';
 import 'modules/locja/locja_module.dart';
+import 'shared/stats/global_stats_screen.dart';
 
 void main() {
   runApp(const SailingCourseApp());
@@ -65,7 +66,16 @@ class CourseHomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(t.appTitle),
-        actions: const [_LanguageMenu()],
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.bar_chart),
+            tooltip: t.statistics,
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const GlobalStatsScreen()),
+            ),
+          ),
+          const _LanguageMenu(),
+        ],
       ),
       body: ListView(
         padding: const EdgeInsets.all(16),

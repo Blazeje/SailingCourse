@@ -8,7 +8,6 @@ import '../../../shared/quiz/data/card_repository.dart';
 import '../../../shared/quiz/models/quiz_card.dart';
 import '../../../shared/quiz/services/progress_service.dart';
 import '../../../shared/quiz/screens/quiz_screen.dart';
-import 'stats_screen.dart';
 
 /// MPDM module home screen (MVI): renders [HomeState].
 class HomeScreen extends StatelessWidget {
@@ -119,25 +118,6 @@ class _HomeView extends StatelessWidget {
         return Scaffold(
           appBar: AppBar(
             title: Text(t.moduleMpdmTitle),
-            actions: [
-              IconButton(
-                icon: const Icon(Icons.bar_chart),
-                tooltip: t.statistics,
-                onPressed: () async {
-                  await Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => StatsScreen(
-                        progress: progress,
-                        totalCards: state.all.length,
-                      ),
-                    ),
-                  );
-                  if (context.mounted) {
-                    context.read<HomeBloc>().add(const HomeRefreshed());
-                  }
-                },
-              ),
-            ],
           ),
           body: ListView(
             padding: const EdgeInsets.all(16),

@@ -39,6 +39,8 @@
 
   "statSeen": "Poznane karty",
   "statAccuracy": "Łączna skuteczność",
+  "statOverall": "Łącznie",
+  "statByModule": "Według modułu",
   "accuracyValue": "{percent}%  ({correct}/{total})",
   "statBestExam": "Najlepszy wynik egzaminu",
   "fraction": "{part} / {whole}",

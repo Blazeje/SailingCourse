@@ -23,8 +23,9 @@ share a common quiz engine:
   - **Learn** – answer with hints and explanations (cites the relevant COLREGS
     rule).
   - **Exam** – all cards, no hints, pass threshold 75%, best score is recorded.
-- **Statistics** – seen cards, overall accuracy and best exam score,
-  with a progress reset option.
+- **Global statistics** – aggregated across all modules (seen cards, overall
+  accuracy and best exam score per module), opened from the hub app bar, with a
+  reset-all-progress option.
 - **Custom scene rendering** – lights and shapes are drawn with a `CustomPainter`
   (no image assets needed).
 - **Internationalization (PL / EN)** – full UI *and* quiz content are localized,
@@ -39,7 +40,7 @@ The modules follow an **MVI** pattern implemented with
 |-------------|----------------|
 | Intent      | `*Event` classes (e.g. `OptionSelected`, `NextPressed`) |
 | Model/State | immutable `*State` classes (`Equatable` + `copyWith`)  |
-| Reducer     | the `Bloc` (`QuizBloc`, `HomeBloc`, `StatsBloc`)       |
+| Reducer     | the `Bloc` (`QuizBloc`, `HomeBloc`, `GlobalStatsBloc`)  |
 | View        | `BlocBuilder` / `BlocConsumer` widgets                  |
 
 The reusable quiz engine (cards, repository, progress, quiz/result screens)
@@ -50,16 +51,19 @@ that configures it (its own asset folder and progress namespace).
 lib/
 ├── main.dart                 # App root, hub screen, language switcher
 ├── l10n/                     # ARB files + generated AppLocalizations, LocaleCubit
-├── shared/quiz/              # Reusable quiz engine
-│   ├── bloc/                 # QuizBloc (Event/State/Bloc)
-│   ├── data/                 # CardRepository (loads cards_<lang>.json)
-│   ├── models/               # QuizCard, SceneElement
-│   ├── painters/             # ScenePainter (CustomPainter)
-│   ├── services/             # ProgressService (stats + best score, shared_preferences)
-│   ├── screens/              # Quiz / Result views
-│   └── widgets/              # SceneView
+├── shared/                   # Reusable, cross-module code
+│   ├── modules.dart          # Course module registry (single source of truth)
+│   ├── stats/                # GlobalStatsBloc + screen (cross-module stats)
+│   └── quiz/                 # Reusable quiz engine
+│       ├── bloc/             # QuizBloc (Event/State/Bloc)
+│       ├── data/             # CardRepository (loads cards_<lang>.json)
+│       ├── models/           # QuizCard, SceneElement
+│       ├── painters/         # ScenePainter (CustomPainter)
+│       ├── services/         # ProgressService (stats + best score, shared_preferences)
+│       ├── screens/          # Quiz / Result views
+│       └── widgets/          # SceneView
 └── modules/
-    ├── mpdm/                 # Lights & shapes: HomeBloc, StatsBloc, screens
+    ├── mpdm/                 # Lights & shapes: HomeBloc, screens
     │   └── mpdm_module.dart  # Self-initializing module entry point
     ├── rescue/               # Rescue & safety: learn + exam, text-only cards
     │   └── rescue_module.dart
