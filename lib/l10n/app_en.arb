@@ -7,6 +7,27 @@
   },
   "cancel": "Cancel",
 
+  "homeLearn": "Learn",
+  "@homeLearn": {
+    "description": "Home tile that opens the study modules."
+  },
+  "homeLearnSubtitle": "Browse the study modules and practise freely",
+  "@homeLearnSubtitle": {
+    "description": "Subtitle of the Learn home tile."
+  },
+  "homeExamInland": "Exam – Inland sailing licence",
+  "@homeExamInland": {
+    "description": "Home tile for the inland sailing licence exam (not yet available)."
+  },
+  "homeExamSea": "Exam – Offshore skipper",
+  "@homeExamSea": {
+    "description": "Home tile for the offshore skipper exam (not yet available)."
+  },
+  "comingSoon": "Coming soon",
+  "@comingSoon": {
+    "description": "Label shown on disabled tiles that are not implemented yet."
+  },
+
   "moduleMpdmTitle": "MPDM – Lights & shapes",
   "moduleMpdmSubtitle": "International Regulations for Preventing Collisions at Sea (Rules 20–31)",
   "moduleNavigationTitle": "Navigation",

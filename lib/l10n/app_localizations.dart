@@ -110,6 +110,36 @@ abstract class AppLocalizations {
   /// **'Cancel'**
   String get cancel;
 
+  /// Home tile that opens the study modules.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn'**
+  String get homeLearn;
+
+  /// Subtitle of the Learn home tile.
+  ///
+  /// In en, this message translates to:
+  /// **'Browse the study modules and practise freely'**
+  String get homeLearnSubtitle;
+
+  /// Home tile for the inland sailing licence exam (not yet available).
+  ///
+  /// In en, this message translates to:
+  /// **'Exam – Inland sailing licence'**
+  String get homeExamInland;
+
+  /// Home tile for the offshore skipper exam (not yet available).
+  ///
+  /// In en, this message translates to:
+  /// **'Exam – Offshore skipper'**
+  String get homeExamSea;
+
+  /// Label shown on disabled tiles that are not implemented yet.
+  ///
+  /// In en, this message translates to:
+  /// **'Coming soon'**
+  String get comingSoon;
+
   /// No description provided for @moduleMpdmTitle.
   ///
   /// In en, this message translates to:

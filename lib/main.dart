@@ -57,7 +57,7 @@ class SailingCourseApp extends StatelessWidget {
   }
 }
 
-/// Course hub screen. Lists the thematic modules.
+/// Top-level hub screen. Lets the user choose between learning and exams.
 class CourseHomeScreen extends StatelessWidget {
   const CourseHomeScreen({super.key});
 
@@ -77,6 +77,46 @@ class CourseHomeScreen extends StatelessWidget {
           ),
           const _LanguageMenu(),
         ],
+      ),
+      body: ListView(
+        padding: const EdgeInsets.all(16),
+        children: [
+          _ModuleCard(
+            icon: Icons.school,
+            title: t.homeLearn,
+            subtitle: t.homeLearnSubtitle,
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const LearnHubScreen()),
+            ),
+          ),
+          _ModuleCard(
+            icon: Icons.workspace_premium,
+            title: t.homeExamInland,
+            subtitle: t.comingSoon,
+            enabled: false,
+          ),
+          _ModuleCard(
+            icon: Icons.anchor,
+            title: t.homeExamSea,
+            subtitle: t.comingSoon,
+            enabled: false,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Lists the thematic study modules.
+class LearnHubScreen extends StatelessWidget {
+  const LearnHubScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context);
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(t.homeLearn),
       ),
       body: ListView(
         padding: const EdgeInsets.all(16),
@@ -183,28 +223,34 @@ class _ModuleCard extends StatelessWidget {
   final String title;
   final String subtitle;
   final VoidCallback? onTap;
+  final bool enabled;
 
   const _ModuleCard({
     required this.icon,
     required this.title,
     required this.subtitle,
     this.onTap,
+    this.enabled = true,
   });
 
   @override
   Widget build(BuildContext context) {
+    final disabledColor = Theme.of(context).disabledColor;
     return Card(
       margin: const EdgeInsets.only(bottom: 14),
       child: ListTile(
+        enabled: enabled,
         contentPadding:
             const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-        leading: Icon(icon, size: 36),
+        leading: Icon(icon, size: 36, color: enabled ? null : disabledColor),
         title: Text(title,
-            style: const TextStyle(
-                fontSize: 18, fontWeight: FontWeight.bold)),
+            style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: enabled ? null : disabledColor)),
         subtitle: Text(subtitle),
-        trailing: const Icon(Icons.chevron_right),
-        onTap: onTap,
+        trailing: Icon(enabled ? Icons.chevron_right : Icons.lock_outline),
+        onTap: enabled ? onTap : null,
       ),
     );
   }

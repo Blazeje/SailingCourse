@@ -16,6 +16,22 @@ class AppLocalizationsEn extends AppLocalizations {
   String get cancel => 'Cancel';
 
   @override
+  String get homeLearn => 'Learn';
+
+  @override
+  String get homeLearnSubtitle =>
+      'Browse the study modules and practise freely';
+
+  @override
+  String get homeExamInland => 'Exam – Inland sailing licence';
+
+  @override
+  String get homeExamSea => 'Exam – Offshore skipper';
+
+  @override
+  String get comingSoon => 'Coming soon';
+
+  @override
   String get moduleMpdmTitle => 'MPDM – Lights & shapes';
 
   @override

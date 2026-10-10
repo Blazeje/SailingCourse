@@ -16,6 +16,21 @@ class AppLocalizationsPl extends AppLocalizations {
   String get cancel => 'Anuluj';
 
   @override
+  String get homeLearn => 'Nauka';
+
+  @override
+  String get homeLearnSubtitle => 'Przeglądaj moduły i ćwicz dowolnie';
+
+  @override
+  String get homeExamInland => 'Egzamin – Patent żeglarza śródlądowego';
+
+  @override
+  String get homeExamSea => 'Egzamin – Sternik morski';
+
+  @override
+  String get comingSoon => 'Wkrótce';
+
+  @override
   String get moduleMpdmTitle => 'MPDM – Światła i znaki';
 
   @override

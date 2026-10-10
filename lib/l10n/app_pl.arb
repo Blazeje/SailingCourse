@@ -4,6 +4,12 @@
   "appTitle": "Kurs żeglarski",
   "cancel": "Anuluj",
 
+  "homeLearn": "Nauka",
+  "homeLearnSubtitle": "Przeglądaj moduły i ćwicz dowolnie",
+  "homeExamInland": "Egzamin – Patent żeglarza śródlądowego",
+  "homeExamSea": "Egzamin – Sternik morski",
+  "comingSoon": "Wkrótce",
+
   "moduleMpdmTitle": "MPDM – Światła i znaki",
   "moduleMpdmSubtitle": "Międzynarodowe Prawo Drogi Morskiej (Prawidła 20–31)",
   "moduleNavigationTitle": "Nawigacja",
