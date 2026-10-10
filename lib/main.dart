@@ -8,6 +8,7 @@ import 'modules/mpdm/mpdm_module.dart';
 import 'modules/rescue/rescue_module.dart';
 import 'modules/locja/locja_module.dart';
 import 'modules/navigation/navigation_module.dart';
+import 'modules/meteo/meteo_module.dart';
 import 'shared/stats/global_stats_screen.dart';
 
 void main() {
@@ -151,6 +152,14 @@ class LearnHubScreen extends StatelessWidget {
             subtitle: t.moduleNavigationSubtitle,
             onTap: () => Navigator.of(context).push(
               MaterialPageRoute(builder: (_) => const NavigationModule()),
+            ),
+          ),
+          _ModuleCard(
+            icon: Icons.cloud,
+            title: t.moduleMeteoTitle,
+            subtitle: t.moduleMeteoSubtitle,
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const MeteoModule()),
             ),
           ),
         ],

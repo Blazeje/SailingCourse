@@ -164,6 +164,18 @@ abstract class AppLocalizations {
   /// **'Compass corrections, bearings & fixes, dead reckoning, set & drift'**
   String get moduleNavigationSubtitle;
 
+  /// Title of the meteorology module.
+  ///
+  /// In en, this message translates to:
+  /// **'Meteorology'**
+  String get moduleMeteoTitle;
+
+  /// Subtitle of the meteorology module.
+  ///
+  /// In en, this message translates to:
+  /// **'Beaufort scale, pressure & fronts, clouds, land & sea breezes'**
+  String get moduleMeteoSubtitle;
+
   /// Title of the rescue & safety module.
   ///
   /// In en, this message translates to:

@@ -32,6 +32,14 @@
   "moduleMpdmSubtitle": "International Regulations for Preventing Collisions at Sea (Rules 20–31)",
   "moduleNavigationTitle": "Navigation",
   "moduleNavigationSubtitle": "Compass corrections, bearings & fixes, dead reckoning, set & drift",
+  "moduleMeteoTitle": "Meteorology",
+  "@moduleMeteoTitle": {
+    "description": "Title of the meteorology module."
+  },
+  "moduleMeteoSubtitle": "Beaufort scale, pressure & fronts, clouds, land & sea breezes",
+  "@moduleMeteoSubtitle": {
+    "description": "Subtitle of the meteorology module."
+  },
   "moduleRescueTitle": "Rescue & safety",
   "@moduleRescueTitle": {
     "description": "Title of the rescue & safety module."

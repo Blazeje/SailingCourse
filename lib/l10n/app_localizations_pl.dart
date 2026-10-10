@@ -45,6 +45,13 @@ class AppLocalizationsPl extends AppLocalizations {
       'Poprawki kompasu, namiary i pozycja, zliczanie drogi, prąd i znos';
 
   @override
+  String get moduleMeteoTitle => 'Meteorologia';
+
+  @override
+  String get moduleMeteoSubtitle =>
+      'Skala Beauforta, ciśnienie i fronty, chmury, bryza lądowa i morska';
+
+  @override
   String get moduleRescueTitle => 'Ratownictwo';
 
   @override

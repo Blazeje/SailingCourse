@@ -77,6 +77,8 @@ flutter:
     - assets/locja/cards_en.json
     - assets/navigation/cards_pl.json
     - assets/navigation/cards_en.json
+    - assets/meteo/cards_pl.json
+    - assets/meteo/cards_en.json
 
   # To add assets to your application, add an assets section, like this:
   # assets:

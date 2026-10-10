@@ -14,6 +14,8 @@
   "moduleMpdmSubtitle": "Międzynarodowe Prawo Drogi Morskiej (Prawidła 20–31)",
   "moduleNavigationTitle": "Nawigacja",
   "moduleNavigationSubtitle": "Poprawki kompasu, namiary i pozycja, zliczanie drogi, prąd i znos",
+  "moduleMeteoTitle": "Meteorologia",
+  "moduleMeteoSubtitle": "Skala Beauforta, ciśnienie i fronty, chmury, bryza lądowa i morska",
   "moduleRescueTitle": "Ratownictwo",
   "moduleRescueSubtitle": "SART, ewakuacja helikopterem, MOB, tratwa, sygnały wzywania pomocy",
   "moduleLocjaTitle": "Locja",

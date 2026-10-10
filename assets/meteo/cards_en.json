@@ -1,0 +1,136 @@
+{
+  "cards": [
+    {
+      "id": "mt01",
+      "question": "What does the Beaufort scale measure?",
+      "options": [
+        "Wind force, from 0 (calm) to 12 (hurricane)",
+        "Wave height in metres",
+        "Atmospheric pressure in hectopascals"
+      ],
+      "correctIndex": 0,
+      "explanation": "The Beaufort scale describes wind force on a 0–12 range, each step linked to its effect on the sea and on land (calm at 0, hurricane at 12)."
+    },
+    {
+      "id": "mt02",
+      "question": "A wind of force 6 Beaufort is described as:",
+      "options": [
+        "A strong wind (22–27 knots)",
+        "A light breeze (4–6 knots)",
+        "A storm (48–55 knots)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Force 6 is a strong wind, about 22–27 knots, with large waves and white foam crests – a small-craft advisory is typically issued."
+    },
+    {
+      "id": "mt03",
+      "question": "In what unit is atmospheric pressure given in marine forecasts?",
+      "options": [
+        "Hectopascals (hPa), equivalent to millibars",
+        "Degrees Celsius",
+        "Knots"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pressure is given in hectopascals (hPa), numerically equal to the older millibars. Standard sea-level pressure is about 1013 hPa."
+    },
+    {
+      "id": "mt04",
+      "question": "A rapidly falling barometer usually indicates:",
+      "options": [
+        "An approaching low and deteriorating, windy weather",
+        "Settling, fair weather",
+        "No change in the weather"
+      ],
+      "correctIndex": 0,
+      "explanation": "A fast pressure drop signals an approaching depression (low): expect strengthening wind and worsening weather. The quicker the fall, the stronger the coming wind."
+    },
+    {
+      "id": "mt05",
+      "question": "Around a low-pressure area in the Northern Hemisphere, the wind circulates:",
+      "options": [
+        "Anticlockwise and inward toward the centre",
+        "Clockwise and outward from the centre",
+        "Straight along the isobars with no rotation"
+      ],
+      "correctIndex": 0,
+      "explanation": "In the Northern Hemisphere air spirals anticlockwise and inward around a low (cyclone); around a high it rotates clockwise and outward."
+    },
+    {
+      "id": "mt06",
+      "question": "What weather is typically brought by a warm front?",
+      "options": [
+        "Gradual cloud build-up with prolonged, steady rain",
+        "Short, violent squalls with sudden clearing",
+        "Clear skies and falling temperature"
+      ],
+      "correctIndex": 0,
+      "explanation": "A warm front advances slowly: high cloud thickens and lowers, giving long-lasting continuous rain and rising temperature once it passes."
+    },
+    {
+      "id": "mt07",
+      "question": "What is characteristic of a cold front passing?",
+      "options": [
+        "Heavy showers or thunderstorms, gusty veering wind and a temperature drop",
+        "Slow, steady drizzle lasting many hours",
+        "A long spell of fog with no wind"
+      ],
+      "correctIndex": 0,
+      "explanation": "A cold front moves fast, lifting warm air sharply: expect cumulonimbus, heavy showers or thunder, strong gusty wind that veers, then clearing and cooler air."
+    },
+    {
+      "id": "mt08",
+      "question": "Which clouds most often warn of thunderstorms and squalls?",
+      "options": [
+        "Cumulonimbus",
+        "Cirrus",
+        "Stratus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cumulonimbus are towering, anvil-topped storm clouds bringing heavy rain, lightning, hail and dangerous gusts – a clear signal to reef or seek shelter."
+    },
+    {
+      "id": "mt09",
+      "question": "How does a sea breeze form on a sunny day?",
+      "options": [
+        "Land heats faster than the sea, so cooler air flows from sea to land",
+        "The sea heats faster than the land, so air flows from land to sea",
+        "It is caused by the tide rising and falling"
+      ],
+      "correctIndex": 0,
+      "explanation": "By day the land warms quickly; rising warm air over land is replaced by cooler air drawn in from the sea – an onshore sea breeze that strengthens through the afternoon."
+    },
+    {
+      "id": "mt10",
+      "question": "At night near the coast you often get a land breeze. Why?",
+      "options": [
+        "The land cools faster than the sea, so air flows from land to sea",
+        "The sea cools faster than the land, so air flows from sea to land",
+        "Warm air always sinks toward the water at night"
+      ],
+      "correctIndex": 0,
+      "explanation": "At night the land cools faster than the sea; relatively warm air rising over the water is replaced by cooler air flowing off the land – an offshore land breeze."
+    },
+    {
+      "id": "mt11",
+      "question": "What does the dew point tell you?",
+      "options": [
+        "The temperature at which air becomes saturated and fog or dew can form",
+        "The highest temperature expected during the day",
+        "The water temperature at the surface"
+      ],
+      "correctIndex": 0,
+      "explanation": "The dew point is the temperature at which air reaches 100% humidity. When the air temperature falls close to the dew point, fog, mist or dew is likely."
+    },
+    {
+      "id": "mt12",
+      "question": "A forecast gives 'wind veering'. What does that mean?",
+      "options": [
+        "The wind direction is changing clockwise (e.g. S to SW to W)",
+        "The wind direction is changing anticlockwise (e.g. W to SW to S)",
+        "The wind is steadily increasing in strength"
+      ],
+      "correctIndex": 0,
+      "explanation": "Veering is a clockwise change of wind direction; the opposite, an anticlockwise change, is called backing. Both refer to direction, not strength."
+    }
+  ]
+}

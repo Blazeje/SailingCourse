@@ -46,6 +46,13 @@ class AppLocalizationsEn extends AppLocalizations {
       'Compass corrections, bearings & fixes, dead reckoning, set & drift';
 
   @override
+  String get moduleMeteoTitle => 'Meteorology';
+
+  @override
+  String get moduleMeteoSubtitle =>
+      'Beaufort scale, pressure & fronts, clouds, land & sea breezes';
+
+  @override
   String get moduleRescueTitle => 'Rescue & safety';
 
   @override

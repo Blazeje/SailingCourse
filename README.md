@@ -13,6 +13,8 @@ share a common quiz engine:
   text questions on lights, chart symbols and tides.
 - **Navigation** – text-only calculation and theory questions (compass
   corrections, bearings & fixes, dead reckoning, set & drift, speed/distance/time).
+- **Meteorology** – text-only weather theory questions (Beaufort scale,
+  pressure & fronts, clouds, land & sea breezes, dew point, veering/backing).
 
 > **MPDM** = *Międzynarodowe Prawo Drogi Morskiej* (International Regulations
 > for Preventing Collisions at Sea).
@@ -74,17 +76,21 @@ lib/
     │   └── painters/         # MarkPainter (IALA Region A marks)
     └── navigation/           # Navigation: learn + exam, text-only cards
         └── navigation_module.dart
+    └── meteo/                # Meteorology: learn + exam, text-only cards
+        └── meteo_module.dart
 assets/
 ├── mpdm/       cards_pl.json / cards_en.json   # 30 cards (lights + shapes)
 ├── rescue/     cards_pl.json / cards_en.json   # 12 cards (knowledge questions)
 ├── locja/      cards_pl.json / cards_en.json   # 14 cards (marks + pilotage)
-└── navigation/ cards_pl.json / cards_en.json   # 12 cards (calculations + theory)
+├── navigation/ cards_pl.json / cards_en.json   # 12 cards (calculations + theory)
+└── meteo/      cards_pl.json / cards_en.json   # 12 cards (weather theory)
 ```
 
 The MPDM deck contains **30 cards**: 19 night/lights (`n01`–`n19`) and 11
 day/shapes (`d01`–`d11`). The rescue deck contains **12 cards** (`r01`–`r12`).
 The pilotage deck contains **14 cards** (`l01`–`l14`), 9 of them with a drawn
-IALA mark. The navigation deck contains **12 cards** (`nv01`–`nv12`).
+IALA mark. The navigation deck contains **12 cards** (`nv01`–`nv12`). The
+meteorology deck contains **12 cards** (`mt01`–`mt12`).
 
 ## Getting started
 

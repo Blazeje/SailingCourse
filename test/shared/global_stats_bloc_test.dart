@@ -24,7 +24,7 @@ void main() {
       // THEN: all modules are present, totals summed, nothing seen yet.
       expect(bloc.state.loading, false);
       expect(bloc.state.modules.length, kCourseModules.length);
-      expect(bloc.state.totalCards, 30 + 12 + 14 + 12);
+      expect(bloc.state.totalCards, 30 + 12 + 14 + 12 + 12);
       expect(bloc.state.seenCount, 0);
       expect(bloc.state.totalAnswered, 0);
       expect(bloc.state.accuracyPercent, 0);

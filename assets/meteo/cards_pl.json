@@ -1,0 +1,136 @@
+{
+  "cards": [
+    {
+      "id": "mt01",
+      "question": "Co określa skala Beauforta?",
+      "options": [
+        "Siłę wiatru, od 0 (cisza) do 12 (huragan)",
+        "Wysokość fali w metrach",
+        "Ciśnienie atmosferyczne w hektopaskalach"
+      ],
+      "correctIndex": 0,
+      "explanation": "Skala Beauforta opisuje siłę wiatru w zakresie 0–12, a każdy stopień powiązany jest z jego skutkami na morzu i lądzie (0 to cisza, 12 to huragan)."
+    },
+    {
+      "id": "mt02",
+      "question": "Wiatr o sile 6 w skali Beauforta to:",
+      "options": [
+        "Wiatr silny (22–27 węzłów)",
+        "Słaby powiew (4–6 węzłów)",
+        "Sztorm (48–55 węzłów)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Siła 6 to wiatr silny, około 22–27 węzłów, z dużą falą i białymi grzywaczami – zwykle wydaje się ostrzeżenie dla małych jednostek."
+    },
+    {
+      "id": "mt03",
+      "question": "W jakiej jednostce podaje się ciśnienie atmosferyczne w prognozach morskich?",
+      "options": [
+        "W hektopaskalach (hPa), równoważnych milibarom",
+        "W stopniach Celsjusza",
+        "W węzłach"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ciśnienie podaje się w hektopaskalach (hPa), liczbowo równych dawnym milibarom. Standardowe ciśnienie na poziomie morza to około 1013 hPa."
+    },
+    {
+      "id": "mt04",
+      "question": "Szybko spadające ciśnienie zwykle oznacza:",
+      "options": [
+        "Zbliżający się niż i pogorszenie pogody z silnym wiatrem",
+        "Ustabilizowanie się ładnej pogody",
+        "Brak zmian pogody"
+      ],
+      "correctIndex": 0,
+      "explanation": "Szybki spadek ciśnienia zapowiada nadciągający niż: należy spodziewać się wzmagającego wiatru i pogorszenia pogody. Im szybszy spadek, tym silniejszy nadchodzący wiatr."
+    },
+    {
+      "id": "mt05",
+      "question": "Wokół niżu na półkuli północnej wiatr krąży:",
+      "options": [
+        "Przeciwnie do ruchu wskazówek zegara, do wewnątrz ku centrum",
+        "Zgodnie z ruchem wskazówek zegara, na zewnątrz od centrum",
+        "Prosto wzdłuż izobar, bez obrotu"
+      ],
+      "correctIndex": 0,
+      "explanation": "Na półkuli północnej powietrze wokół niżu (cyklonu) wiruje przeciwnie do wskazówek zegara i do wewnątrz; wokół wyżu – zgodnie z ruchem wskazówek i na zewnątrz."
+    },
+    {
+      "id": "mt06",
+      "question": "Jaką pogodę zwykle przynosi front ciepły?",
+      "options": [
+        "Stopniowe narastanie zachmurzenia i długotrwały, równomierny deszcz",
+        "Krótkie, gwałtowne szkwały z nagłym przejaśnieniem",
+        "Bezchmurne niebo i spadek temperatury"
+      ],
+      "correctIndex": 0,
+      "explanation": "Front ciepły przesuwa się powoli: wysokie chmury gęstnieją i obniżają się, dając długotrwały, ciągły deszcz, a po jego przejściu wzrost temperatury."
+    },
+    {
+      "id": "mt07",
+      "question": "Co jest charakterystyczne dla przechodzącego frontu chłodnego?",
+      "options": [
+        "Silne przelotne opady lub burze, porywisty wiatr skręcający w prawo i spadek temperatury",
+        "Powolna, równomierna mżawka trwająca wiele godzin",
+        "Długa mgła bez wiatru"
+      ],
+      "correctIndex": 0,
+      "explanation": "Front chłodny przemieszcza się szybko, gwałtownie wypiętrzając ciepłe powietrze: pojawiają się cumulonimbusy, silne przelotne opady lub burze, porywisty wiatr skręcający w prawo, a potem przejaśnienia i chłodniejsze powietrze."
+    },
+    {
+      "id": "mt08",
+      "question": "Które chmury najczęściej zapowiadają burze i szkwały?",
+      "options": [
+        "Cumulonimbus",
+        "Cirrus",
+        "Stratus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cumulonimbusy to potężne chmury burzowe z kowadłem, przynoszące ulewny deszcz, wyładowania, grad i groźne porywy – to wyraźny sygnał, by zrefować lub schronić się."
+    },
+    {
+      "id": "mt09",
+      "question": "Jak powstaje bryza morska w słoneczny dzień?",
+      "options": [
+        "Ląd nagrzewa się szybciej niż morze, więc chłodniejsze powietrze napływa znad morza na ląd",
+        "Morze nagrzewa się szybciej niż ląd, więc powietrze płynie z lądu na morze",
+        "Jest powodowana przez przypływ i odpływ"
+      ],
+      "correctIndex": 0,
+      "explanation": "W dzień ląd szybko się nagrzewa; unoszące się nad nim ciepłe powietrze zastępowane jest chłodniejszym znad morza – to bryza morska (dzienna), która nasila się po południu."
+    },
+    {
+      "id": "mt10",
+      "question": "W nocy przy wybrzeżu często pojawia się bryza lądowa. Dlaczego?",
+      "options": [
+        "Ląd wychładza się szybciej niż morze, więc powietrze płynie z lądu na morze",
+        "Morze wychładza się szybciej niż ląd, więc powietrze płynie znad morza na ląd",
+        "Ciepłe powietrze zawsze opada nad wodą w nocy"
+      ],
+      "correctIndex": 0,
+      "explanation": "W nocy ląd wychładza się szybciej niż morze; względnie ciepłe powietrze unoszące się nad wodą zastępowane jest chłodniejszym znad lądu – to bryza lądowa (nocna)."
+    },
+    {
+      "id": "mt11",
+      "question": "Co określa temperatura punktu rosy?",
+      "options": [
+        "Temperaturę, przy której powietrze osiąga nasycenie i może powstać mgła lub rosa",
+        "Najwyższą temperaturę spodziewaną w ciągu dnia",
+        "Temperaturę wody przy powierzchni"
+      ],
+      "correctIndex": 0,
+      "explanation": "Punkt rosy to temperatura, przy której wilgotność powietrza osiąga 100%. Gdy temperatura powietrza spada blisko punktu rosy, prawdopodobne są mgła, zamglenie lub rosa."
+    },
+    {
+      "id": "mt12",
+      "question": "Prognoza podaje, że wiatr „skręca w prawo”. Co to oznacza?",
+      "options": [
+        "Kierunek wiatru zmienia się zgodnie z ruchem wskazówek zegara (np. S na SW na W)",
+        "Kierunek wiatru zmienia się przeciwnie do ruchu wskazówek zegara (np. W na SW na S)",
+        "Wiatr stale przybiera na sile"
+      ],
+      "correctIndex": 0,
+      "explanation": "Skręt w prawo (veering) to zmiana kierunku wiatru zgodna z ruchem wskazówek zegara; odwrotna, przeciwna do wskazówek, nazywana jest skrętem w lewo (backing). Oba dotyczą kierunku, nie siły."
+    }
+  ]
+}
