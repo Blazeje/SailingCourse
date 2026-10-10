@@ -79,20 +79,6 @@ class AppLocalizationsPl extends AppLocalizations {
   String get learnSubtitle => 'Ucz się z podpowiedziami i wyjaśnieniami';
 
   @override
-  String get reviews => 'Powtórki (SRS)';
-
-  @override
-  String get reviewsShort => 'Powtórki';
-
-  @override
-  String dueToday(int count) {
-    return 'Do powtórzenia dziś: $count';
-  }
-
-  @override
-  String get noReviews => 'Brak kart do powtórki – wróć później';
-
-  @override
   String get exam => 'Egzamin';
 
   @override
@@ -133,9 +119,6 @@ class AppLocalizationsPl extends AppLocalizations {
   String get statSeen => 'Poznane karty';
 
   @override
-  String get statMastered => 'Opanowane (interwał ≥ 7 dni)';
-
-  @override
   String get statAccuracy => 'Łączna skuteczność';
 
   @override
@@ -161,7 +144,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get resetConfirmBody =>
-      'Usunie to wszystkie dane nauki, powtórek i rekord egzaminu.';
+      'Usunie to wszystkie dane nauki i rekord egzaminu.';
 
   @override
   String get reset => 'Resetuj';

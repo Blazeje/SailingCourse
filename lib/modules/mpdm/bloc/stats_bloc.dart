@@ -23,14 +23,12 @@ class StatsReset extends StatsEvent {
 
 class StatsState extends Equatable {
   final int seenCount;
-  final int masteredCount;
   final int totalAnswered;
   final int totalCorrect;
   final int bestExamScore;
 
   const StatsState({
     this.seenCount = 0,
-    this.masteredCount = 0,
     this.totalAnswered = 0,
     this.totalCorrect = 0,
     this.bestExamScore = 0,
@@ -41,7 +39,7 @@ class StatsState extends Equatable {
 
   @override
   List<Object?> get props =>
-      [seenCount, masteredCount, totalAnswered, totalCorrect, bestExamScore];
+      [seenCount, totalAnswered, totalCorrect, bestExamScore];
 }
 
 // ------------------------------- REDUCER (Bloc) ------------------------------
@@ -59,7 +57,6 @@ class StatsBloc extends Bloc<StatsEvent, StatsState> {
 
   StatsState _snapshot() => StatsState(
         seenCount: progress.seenCount,
-        masteredCount: progress.masteredCount,
         totalAnswered: progress.totalAnswered,
         totalCorrect: progress.totalCorrect,
         bestExamScore: progress.bestExamScore,

@@ -23,10 +23,6 @@
   "learnShapes": "Nauka – znaki",
   "statistics": "Statystyki",
   "learnSubtitle": "Ucz się z podpowiedziami i wyjaśnieniami",
-  "reviews": "Powtórki (SRS)",
-  "reviewsShort": "Powtórki",
-  "dueToday": "Do powtórzenia dziś: {count}",
-  "noReviews": "Brak kart do powtórki – wróć później",
   "exam": "Egzamin",
   "examSubtitle": "Wszystkie karty, bez podpowiedzi. Rekord: {score}%",
 
@@ -42,14 +38,13 @@
   "backToMenu": "Powrót do menu",
 
   "statSeen": "Poznane karty",
-  "statMastered": "Opanowane (interwał ≥ 7 dni)",
   "statAccuracy": "Łączna skuteczność",
   "accuracyValue": "{percent}%  ({correct}/{total})",
   "statBestExam": "Najlepszy wynik egzaminu",
   "fraction": "{part} / {whole}",
   "percentValue": "{value}%",
   "resetConfirmTitle": "Zresetować postępy?",
-  "resetConfirmBody": "Usunie to wszystkie dane nauki, powtórek i rekord egzaminu.",
+  "resetConfirmBody": "Usunie to wszystkie dane nauki i rekord egzaminu.",
   "reset": "Resetuj",
   "resetProgress": "Resetuj postępy",
 

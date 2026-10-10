@@ -19,13 +19,11 @@ share a common quiz engine:
 
 - **Offline-first** – all quiz content ships with the app as local JSON; no
   backend or network connection required.
-- **Three study modes**
+- **Two study modes**
   - **Learn** – answer with hints and explanations (cites the relevant COLREGS
     rule).
-  - **Review (SRS)** – spaced repetition based on the **SM-2** algorithm; only
-    the cards due today are shown.
   - **Exam** – all cards, no hints, pass threshold 75%, best score is recorded.
-- **Statistics** – seen/mastered cards, overall accuracy and best exam score,
+- **Statistics** – seen cards, overall accuracy and best exam score,
   with a progress reset option.
 - **Custom scene rendering** – lights and shapes are drawn with a `CustomPainter`
   (no image assets needed).
@@ -57,7 +55,7 @@ lib/
 │   ├── data/                 # CardRepository (loads cards_<lang>.json)
 │   ├── models/               # QuizCard, SceneElement
 │   ├── painters/             # ScenePainter (CustomPainter)
-│   ├── services/             # ProgressService (SM-2 SRS, shared_preferences)
+│   ├── services/             # ProgressService (stats + best score, shared_preferences)
 │   ├── screens/              # Quiz / Result views
 │   └── widgets/              # SceneView
 └── modules/
@@ -98,7 +96,7 @@ The test suite uses the **GIVEN / WHEN / THEN** convention and
 flutter test
 ```
 
-Coverage includes the blocs (quiz/home/stats), the SRS `ProgressService`, the
+Coverage includes the blocs (quiz/home/stats), the `ProgressService`, the
 `QuizCard` model (JSON parsing & answer shuffling) and the `CardRepository`
 (per-language loading with fallback).
 

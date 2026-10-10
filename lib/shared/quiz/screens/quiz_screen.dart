@@ -81,7 +81,7 @@ class _QuizView extends StatelessWidget {
           );
           return;
         }
-        // Learn / review: a correct answer locks the card. Reveal the
+        // Learn mode: a correct answer locks the card. Reveal the
         // explanation in a dialog and advance only after confirmation.
         _showExplanationDialog(context, state);
       },

@@ -4,7 +4,7 @@ import 'package:equatable/equatable.dart';
 import '../models/quiz_card.dart';
 import '../services/progress_service.dart';
 
-enum QuizMode { learn, exam, srs }
+enum QuizMode { learn, exam }
 
 // ------------------------------ INTENTS (Events) -----------------------------
 
@@ -118,7 +118,7 @@ class QuizBloc extends Bloc<QuizEvent, QuizState> {
       return;
     }
 
-    // Learn / review mode.
+    // Learn mode.
     if (correct) {
       final gained = !state.wrongOnThisCard;
       // Lock the card and reveal the explanation. The view shows a dialog and
@@ -150,7 +150,7 @@ class QuizBloc extends Bloc<QuizEvent, QuizState> {
       return;
     }
 
-    // Learn / review mode: advance only after a card has been answered
+    // Learn mode: advance only after a card has been answered
     // correctly (locked) and the explanation has been acknowledged.
     if (!state.locked) return;
     _advance(emit);

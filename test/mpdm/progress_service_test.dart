@@ -13,46 +13,39 @@ void main() {
     await progress.init();
   });
 
-  test('GIVEN a new card WHEN answered correctly THEN it is scheduled in the future',
+  test('GIVEN a new card WHEN answered correctly THEN it is counted as seen and correct',
       () async {
     // WHEN: a correct answer is recorded.
     await progress.recordAnswer('x', true);
 
-    // THEN: the card is no longer due now (next review pushed out).
-    final now = DateTime.now().millisecondsSinceEpoch;
+    // THEN: the card is counted as seen and correct.
     final p = progress.progressFor('x');
     expect(p.timesSeen, 1);
     expect(p.timesCorrect, 1);
-    expect(p.isDue(now), false);
-    expect(progress.dueCount(['x']), 0);
   });
 
-  test('GIVEN a new card WHEN answered incorrectly THEN it stays due the same day',
+  test('GIVEN a new card WHEN answered incorrectly THEN it is seen but not correct',
       () async {
     // WHEN: a wrong answer is recorded.
     await progress.recordAnswer('y', false);
 
-    // THEN: interval reset, card counted as seen, 0 correct.
+    // THEN: the card is counted as seen with zero correct.
     final p = progress.progressFor('y');
     expect(p.timesSeen, 1);
     expect(p.timesCorrect, 0);
-    expect(p.repetitions, 0);
   });
 
-  test('GIVEN several correct answers WHEN repeated THEN the interval grows (SM-2)',
+  test('GIVEN repeated answers WHEN recorded THEN counters and accuracy accumulate',
       () async {
-    // WHEN: three correct answers in a row.
+    // WHEN: two correct and one wrong answer are recorded.
     await progress.recordAnswer('z', true);
-    final first = progress.progressFor('z').intervalDays;
     await progress.recordAnswer('z', true);
-    final second = progress.progressFor('z').intervalDays;
-    await progress.recordAnswer('z', true);
-    final third = progress.progressFor('z').intervalDays;
+    await progress.recordAnswer('z', false);
 
-    // THEN: intervals grow 1 -> 3 -> more.
-    expect(first, 1);
-    expect(second, 3);
-    expect(third, greaterThan(second));
+    // THEN: totals and accuracy reflect every answer.
+    expect(progress.totalAnswered, 3);
+    expect(progress.totalCorrect, 2);
+    expect(progress.accuracy, closeTo(2 / 3, 0.001));
   });
 
   test('GIVEN saved progress WHEN resetAll THEN stats are cleared', () async {

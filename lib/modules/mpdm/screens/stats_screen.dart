@@ -46,11 +46,6 @@ class _StatsView extends StatelessWidget {
                 icon: Icons.visibility,
               ),
               _StatTile(
-                label: t.statMastered,
-                value: t.fraction(state.masteredCount, totalCards),
-                icon: Icons.workspace_premium,
-              ),
-              _StatTile(
                 label: t.statAccuracy,
                 value: t.accuracyValue(state.accuracyPercent,
                     state.totalCorrect, state.totalAnswered),

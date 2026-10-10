@@ -218,30 +218,6 @@ abstract class AppLocalizations {
   /// **'Study with hints and explanations'**
   String get learnSubtitle;
 
-  /// No description provided for @reviews.
-  ///
-  /// In en, this message translates to:
-  /// **'Reviews (SRS)'**
-  String get reviews;
-
-  /// No description provided for @reviewsShort.
-  ///
-  /// In en, this message translates to:
-  /// **'Reviews'**
-  String get reviewsShort;
-
-  /// No description provided for @dueToday.
-  ///
-  /// In en, this message translates to:
-  /// **'Due today: {count}'**
-  String dueToday(int count);
-
-  /// No description provided for @noReviews.
-  ///
-  /// In en, this message translates to:
-  /// **'No cards to review – come back later'**
-  String get noReviews;
-
   /// No description provided for @exam.
   ///
   /// In en, this message translates to:
@@ -314,12 +290,6 @@ abstract class AppLocalizations {
   /// **'Seen cards'**
   String get statSeen;
 
-  /// No description provided for @statMastered.
-  ///
-  /// In en, this message translates to:
-  /// **'Mastered (interval ≥ 7 days)'**
-  String get statMastered;
-
   /// No description provided for @statAccuracy.
   ///
   /// In en, this message translates to:
@@ -359,7 +329,7 @@ abstract class AppLocalizations {
   /// No description provided for @resetConfirmBody.
   ///
   /// In en, this message translates to:
-  /// **'This will delete all learning, review and exam-record data.'**
+  /// **'This will delete all learning and exam-record data.'**
   String get resetConfirmBody;
 
   /// No description provided for @reset.

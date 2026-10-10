@@ -47,13 +47,6 @@
   "learnShapes": "Learn – shapes",
   "statistics": "Statistics",
   "learnSubtitle": "Study with hints and explanations",
-  "reviews": "Reviews (SRS)",
-  "reviewsShort": "Reviews",
-  "dueToday": "Due today: {count}",
-  "@dueToday": {
-    "placeholders": { "count": { "type": "int" } }
-  },
-  "noReviews": "No cards to review – come back later",
   "exam": "Exam",
   "examSubtitle": "All cards, no hints. Best: {score}%",
   "@examSubtitle": {
@@ -81,7 +74,6 @@
   "backToMenu": "Back to menu",
 
   "statSeen": "Seen cards",
-  "statMastered": "Mastered (interval ≥ 7 days)",
   "statAccuracy": "Overall accuracy",
   "accuracyValue": "{percent}%  ({correct}/{total})",
   "@accuracyValue": {
@@ -104,7 +96,7 @@
     "placeholders": { "value": { "type": "int" } }
   },
   "resetConfirmTitle": "Reset progress?",
-  "resetConfirmBody": "This will delete all learning, review and exam-record data.",
+  "resetConfirmBody": "This will delete all learning and exam-record data.",
   "reset": "Reset",
   "resetProgress": "Reset progress",
 

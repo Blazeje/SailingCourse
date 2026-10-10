@@ -79,20 +79,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get learnSubtitle => 'Study with hints and explanations';
 
   @override
-  String get reviews => 'Reviews (SRS)';
-
-  @override
-  String get reviewsShort => 'Reviews';
-
-  @override
-  String dueToday(int count) {
-    return 'Due today: $count';
-  }
-
-  @override
-  String get noReviews => 'No cards to review – come back later';
-
-  @override
   String get exam => 'Exam';
 
   @override
@@ -133,9 +119,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get statSeen => 'Seen cards';
 
   @override
-  String get statMastered => 'Mastered (interval ≥ 7 days)';
-
-  @override
   String get statAccuracy => 'Overall accuracy';
 
   @override
@@ -161,7 +144,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get resetConfirmBody =>
-      'This will delete all learning, review and exam-record data.';
+      'This will delete all learning and exam-record data.';
 
   @override
   String get reset => 'Reset';

@@ -149,18 +149,6 @@ class _HomeView extends StatelessWidget {
                 onTap: () => _learnSheet(context, state),
               ),
               _MenuCard(
-                icon: Icons.replay,
-                title: t.reviews,
-                subtitle: state.dueCount > 0
-                    ? t.dueToday(state.dueCount)
-                    : t.noReviews,
-                enabled: state.dueCount > 0,
-                onTap: () {
-                  final deck = context.read<HomeBloc>().dueDeck();
-                  _startQuiz(context, t.reviewsShort, deck, QuizMode.srs);
-                },
-              ),
-              _MenuCard(
                 icon: Icons.assignment_turned_in,
                 title: t.exam,
                 subtitle: t.examSubtitle(state.bestExamScore),
@@ -180,14 +168,12 @@ class _MenuCard extends StatelessWidget {
   final String title;
   final String subtitle;
   final VoidCallback onTap;
-  final bool enabled;
 
   const _MenuCard({
     required this.icon,
     required this.title,
     required this.subtitle,
     required this.onTap,
-    this.enabled = true,
   });
 
   @override
@@ -203,8 +189,7 @@ class _MenuCard extends StatelessWidget {
                 const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
         subtitle: Text(subtitle),
         trailing: const Icon(Icons.chevron_right),
-        enabled: enabled,
-        onTap: enabled ? onTap : null,
+        onTap: onTap,
       ),
     );
   }

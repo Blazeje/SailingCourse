@@ -34,33 +34,32 @@ void main() {
   });
 
   blocTest<HomeBloc, HomeState>(
-    'GIVEN startup WHEN HomeStarted THEN loading finishes and every card is new (due)',
+    'GIVEN startup WHEN HomeStarted THEN loading finishes and cards are grouped by category',
     build: () => HomeBloc(repository: repository, progress: progress),
     act: (bloc) => bloc.add(const HomeStarted()),
     verify: (bloc) {
-      // THEN: data loaded, all cards are due (new).
+      // THEN: data loaded and grouped by category.
       expect(bloc.state.loading, false);
       expect(bloc.state.all.length, 2);
       expect(bloc.state.lightsCount, 1);
       expect(bloc.state.shapesCount, 1);
-      expect(bloc.state.dueCount, 2);
     },
   );
 
   blocTest<HomeBloc, HomeState>(
-    'GIVEN a card was answered WHEN HomeRefreshed THEN the due count decreases',
+    'GIVEN a better exam score WHEN HomeRefreshed THEN the best score is updated',
     build: () => HomeBloc(repository: repository, progress: progress),
     act: (bloc) async {
       bloc.add(const HomeStarted());
       await Future.delayed(const Duration(milliseconds: 10));
-      // WHEN: card 'a' is answered correctly (schedules it in the future).
-      await progress.recordAnswer('a', true);
+      // WHEN: a new best exam score is saved.
+      await progress.saveBestExamScore(75);
       bloc.add(const HomeRefreshed());
     },
     wait: const Duration(milliseconds: 50),
     verify: (bloc) {
-      // THEN: only one card remains due.
-      expect(bloc.state.dueCount, 1);
+      // THEN: the home state reflects the best exam score.
+      expect(bloc.state.bestExamScore, 75);
     },
   );
 }

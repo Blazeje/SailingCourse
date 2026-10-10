@@ -28,13 +28,11 @@ class HomeRefreshed extends HomeEvent {
 class HomeState extends Equatable {
   final bool loading;
   final List<QuizCard> all;
-  final int dueCount;
   final int bestExamScore;
 
   const HomeState({
     this.loading = true,
     this.all = const [],
-    this.dueCount = 0,
     this.bestExamScore = 0,
   });
 
@@ -49,19 +47,17 @@ class HomeState extends Equatable {
   HomeState copyWith({
     bool? loading,
     List<QuizCard>? all,
-    int? dueCount,
     int? bestExamScore,
   }) {
     return HomeState(
       loading: loading ?? this.loading,
       all: all ?? this.all,
-      dueCount: dueCount ?? this.dueCount,
       bestExamScore: bestExamScore ?? this.bestExamScore,
     );
   }
 
   @override
-  List<Object?> get props => [loading, all, dueCount, bestExamScore];
+  List<Object?> get props => [loading, all, bestExamScore];
 }
 
 // ------------------------------- REDUCER (Bloc) ------------------------------
@@ -81,23 +77,13 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
     emit(state.copyWith(
       loading: false,
       all: cards,
-      dueCount: _dueCount(cards),
       bestExamScore: progress.bestExamScore,
     ));
   }
 
   void _onRefreshed(HomeRefreshed event, Emitter<HomeState> emit) {
     emit(state.copyWith(
-      dueCount: _dueCount(state.all),
       bestExamScore: progress.bestExamScore,
     ));
-  }
-
-  int _dueCount(List<QuizCard> cards) =>
-      progress.dueCount(cards.map((c) => c.id).toList());
-
-  List<QuizCard> dueDeck() {
-    final dueIds = progress.dueCardIds(state.all.map((c) => c.id).toList()).toSet();
-    return state.all.where((c) => dueIds.contains(c.id)).toList();
   }
 }
